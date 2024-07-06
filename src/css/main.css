@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    /*regular*/
+    @font-face{
+        font-family: "IRANSans";
+        src: url("IRANSans-web.woff"),
+            url("IranianSansRegular.ttf");
+            font-weight: normal;
+            font-style: normal;
+    }
+    /*farsi numbers*/
+    @font-face {
+        font-family: "IRANSans-FaNum";
+        src: url("IRANSans-FaNum.ttf");
+        font-weight: normal;
+        font-style: normal;
+    }
+    /*end*/
+}

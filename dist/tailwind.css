@@ -446,6 +446,33 @@ video {
   display: none;
 }
 
+/*regular*/
+
+@font-face{
+  font-family: "IRANSans";
+
+  src: url("IRANSans-web.woff"),
+            url("IranianSansRegular.ttf");
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+/*farsi numbers*/
+
+@font-face {
+  font-family: "IRANSans-FaNum";
+
+  src: url("IRANSans-FaNum.ttf");
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+/*end*/
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -554,7 +581,6 @@ video {
   --tw-contain-style:  ;
 }
 
-.text-blue-600 {
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
+.font-IranSans {
+  font-family: 'IRANSans';
 }
