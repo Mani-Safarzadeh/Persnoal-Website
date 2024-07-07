@@ -7,10 +7,16 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'IranSans': '\'IRANSans\''
+        'vazir': '\'Vazir\''
       }
     },
   },
-  plugins: [],
+  corePlugins: {
+    aspectRatio: false,
+  },
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+    // ...
+  ],
 }
 

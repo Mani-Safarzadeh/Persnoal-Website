@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="../../dist/tailwind.css">
     <title>نام سایت</title>
 </head>
-<body class="font-IranSans">
-    <ul class="flex fixed -right-40 top-0 flex-col h-screen w-40 bg-slate-500 transition-all duration-200 ease-linear" id="nav-menu">
+<body class="font-vazir">
+    <ul class="flex fixed -right-40 top-0 flex-col h-screen w-40 bg-slate-500 transition-all duration-200 ease-linear md:hidden" id="nav-menu">
         <span class="material-symbols-outlined py-5 px-3 cursor-pointer" id="close-menu">close</span>
         <li class="py-5 px-3 flex items-center">
             <span class="material-symbols-outlined">home</span>
@@ -27,12 +27,64 @@
             <p class="px-3 hover:text-white transition-colors duration-100">درباره ما</p>
         </li>
     </ul>
-    <header class="h-100 container bg-blue-800">
-        <nav class="container h-20 flex justify-between items-center">
-            <div class="mr-6"><span class="material-symbols-outlined text-xl2 cursor-pointer" id="btn-menu">menu</span></div>
+    <header>
+        <nav class="bg-blue-600 h-20 flex justify-between items-center">
+            <ul class="hidden md:flex items-center gap-6 mx-4">
+                <li>خانه</li>
+                <li>وبلاگ ما</li>
+                <li>تیم ما</li>
+                <li>درباره ما</li>
+            </ul>
+            <div class="mr-6"><span class="material-symbols-outlined text-xl2 cursor-pointe md:hidden" id="btn-menu">menu</span></div>
             <div class="ml-6"><h3 class="font-bold text-lg">نام سایت</h3></div>
         </nav>
+        <article class="bg-gray-200 text-center flex flex-col items-center">
+            <h1 class="font-bold text-2xl p-6">لورم اپیسوم متنی ساختگی</h1>
+            <p class="px-4 py-2 text-base line leading-relaxed">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+            </p>
+            <div class="flex items-center justify-center py-8 text-sm gap-6">
+                <a class="bg-indigo-600 rounded-md text-white px-4 py-2" href="#">کارهای ما</a>
+                <a class="bg-lime-600 rounded-md text-white px-4 py-2" href="#">وبلاگ ما</a>
+            </div>
+        </article>
     </header>
+    <main class="bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 flex flex-col items-center gap-6">
+        <section class="bg-white shadow-2xl rounded-lg p-4 overflow-hidden w-2/3 mx-5 mt-4"> <!--self start -->
+            <div class="flex items-center gap-8 border-2 border-gray-200 p-1">
+                <img class="w-16 h-16" src="../img/Contact-icon.png" alt="person">
+                <h4 class="text-lg font-bold tracking-tighter">رادمان منتظر</h4>
+            </div>
+            <p class="py-2 leading-relaxed">برنامه نویس بک اند با فریمورک جنگو</p>
+            <div class="flex items-center justify-between border-solid border-t-2 border-gray-200 p-1">
+                <p class="text-sm">نظرات خود را ارسال کنید</p>
+                <span class="material-symbols-outlined hover:text-white hover:bg-blue-600 transition-all duration-300 rounded-xl p-1">chat</span>
+            </div>
+        </section>
+        <section class="bg-white shadow-lg rounded-lg p-4 overflow-hidden w-2/3 mx-5 mb-4"> <!--self end-->
+            <div class="flex items-center gap-8 border-2 border-gray-200 p-1">
+                <img class="w-16 h-16" src="../img/Contact-icon.png" alt="person">
+                <h4 class="text-lg font-bold tracking-tighter">مانی صفرزاده</h4>
+            </div>
+            <p class="py-2 leading-relaxed">برنامه نویس فرانت اند با فریمورک تیلوند</p>
+            <div class="flex items-center justify-between border-solid border-t-2 border-gray-200 p-1">
+                <p class="text-sm">نظرات خود را ارسال کنید</p>
+                <span class="material-symbols-outlined hover:text-white hover:bg-blue-600 transition-all duration-300 rounded-xl p-1">chat</span>
+            </div>
+        </section>
+    </main>
+        <footer class="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
+            <section class="flex items-center">
+                <div class="w-2/3 h-full flex flex-col items-center my-2">
+                    <h6 class="text-gray-200 text-sm">از آخرین اخبار مطلع شوید</h6>
+                    <form action="#" class="flex items-center p-3 overflow-hidden">
+                        <span class="material-symbols-outlined bg-indigo-500 p-2 rounded-e-lg" id="send-email">send</span>
+                        <input class="p-2 text-sm" type="text" name="email" id="email" placeholder="ایمیل خود را وارد کنید">
+                    </form>
+                </div>
+                <img class="w-1/3 self-stretch" src="../img/StockCake-Shattered Glass Symbol_1720330789.jpg" alt="email">
+            </section>
+        </footer>
     <script src="../js/app.js"></script>
 </body>
 </html>

@@ -3,20 +3,13 @@
 @tailwind utilities;
 
 @layer base {
-    /*regular*/
-    @font-face{
-        font-family: "IRANSans";
-        src: url("IRANSans-web.woff"),
-            url("IranianSansRegular.ttf");
-            font-weight: normal;
-            font-style: normal;
-    }
-    /*farsi numbers*/
     @font-face {
-        font-family: "IRANSans-FaNum";
-        src: url("IRANSans-FaNum.ttf");
-        font-weight: normal;
-        font-style: normal;
+        font-family: "Vazir";
+        src :  url(./Vazir-Bold.eot);
+        src : url(./Vazir-Bold.eot) format("embedded-opentype"),
+                url(./Vazir-Bold.woff2) format("woff2"),          
+                url(./Vazir-Bold.woff) format("woff"),
+                url(./Vazir-Bold.ttf) format("truetype");
+        font-weight: bold;
     }
-    /*end*/
 }
