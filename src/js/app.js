@@ -5,10 +5,10 @@ window.onload = function  () {
 
     btnMenu.addEventListener('click', function () {
         navMenu.classList.add('right-0')
-        navMenu.classList.remove('-right-40')
+        navMenu.classList.remove('-right-48')
     })
     closeMenu.addEventListener('click', function () {
-        navMenu.classList.add('-right-40')
+        navMenu.classList.add('-right-48')
         navMenu.classList.remove('right-0')
     })
 }
