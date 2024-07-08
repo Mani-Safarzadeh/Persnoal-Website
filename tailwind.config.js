@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'selector',
   content: [
     "./src/pages/*.html",
     "./src/js/app.js"
@@ -8,6 +9,10 @@ module.exports = {
     extend: {
       fontFamily: {
         'vazir': '\'Vazir\''
+      },
+      inset: {
+        '640': '640px',
+        '1280': '1280px'
       }
     },
   },
