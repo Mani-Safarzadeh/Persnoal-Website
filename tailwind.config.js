@@ -17,6 +17,13 @@ module.exports = {
       },
       padding: {
         '29': '116px'
+      },
+      spacing: {
+        '100': '25rem',
+        '104': '26rem'
+      },
+      borderWidth: {
+        '1': '1px'
       }
     },
   },

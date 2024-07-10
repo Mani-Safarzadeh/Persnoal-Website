@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,43 +9,37 @@
     <title>خانه</title>
 </head>
 <body class="font-vazir bg-gray-200">
-    <ul class="flex fixed -right-48 top-0 flex-col h-screen w-48 bg-slate-500 transition-all duration-200 ease-linear md:hidden z-20" id="nav-menu">
-        <span class="material-symbols-outlined py-5 px-3 cursor-pointer" id="close-menu">close</span>
-        <li class="py-5 px-3 flex items-center">
-            <span class="material-symbols-outlined">home</span>
-            <a href="home.html" class="px-3 hover:text-white transition-colors duration-100">خانه</a>
-        </li>
-        <li class="py-5 px-3 flex items-center">
-            <span class="material-symbols-outlined">shopping_cart</span>
-            <a href="home.html" class="px-3 hover:text-white transition-colors duration-100">فروش وبسایت</a>
-        </li>
-        <li class="py-5 px-3 flex items-center">
-            <span class="material-symbols-outlined">diamond</span>
-            <a href="weblog.html" class="px-3 hover:text-white transition-colors duration-100">وبلاگ ما</a>
-        </li>
-        <li class="py-5 px-3 flex items-center">
-            <span class="material-symbols-outlined">groups_2</span>
-            <a href="team.html" class="px-3 hover:text-white transition-colors duration-100">تیم ما</a>
-        </li>
-        <li class="py-5 px-3 flex items-center">
-            <span class="material-symbols-outlined">info</span>
-            <a class="px-3 hover:text-white transition-colors duration-100">تماس با ما</a>
-        </li>
-        
-    </ul>
-    <header>
-        <nav class="bg-zinc-700 h-16 flex justify-between items-center">
-            <ul class="hidden md:flex items-center gap-6 mx-4">
-                <li class="hover:text-gray-500 text-white transition duration-300"><a href="home.html">خانه</a></li>
-                <li class="hover:text-gray-500 text-white transition duration-300"><a href="#">فروش وبسایت</a></li>
-                <li class="hover:text-gray-500 text-white transition duration-300"><a href="weblog.html">وبلاگ ما</a></li>
-                <li class="hover:text-gray-500 text-white transition duration-300"><a href="team.html">تیم ما</a></li>
-                <li class="hover:text-gray-500 text-white transition duration-300"><a href="#">درباره ما</a></li>
+    <!-- Nav Bar -->
+    <nav class="flex flex-col sticky top-0 z-50">
+        <div class="bg-zinc-700 h-16 flex justify-between items-center px-6 w-full t-0 z-10">
+            <ul class="hidden md:flex items-center gap-6">
+                <!-- Nav Bar Items -->
+                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition duration-150"><a href="home.html">خانه</a></li>
+                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition duration-150"><a href="#">خرید وبسایت</a></li>
+                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition duration-150"><a href="weblog.html">وبلاگ ما</a></li>
+                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition duration-150"><a href="team.html">تیم ما</a></li>
+                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition duration-150"><a href="#">درباره ما</a></li>
             </ul>
-            <div class="mr-6 md:hidden"><span class="material-symbols-outlined text-xl2 cursor-pointe" id="btn-menu">menu</span></div>
-            <div class="ml-6"><h3 class="font-bold text-lg text-white">نام سایت</h3></div>
-        </nav>
-    </header>
+            <!-- MenuIcon -->
+            <div class="block md:hidden">
+                <span class="material-symbols-outlined text-3xl cursor-pointer text-white" id="nav-icon">menu</span>
+            </div>
+            <div class="hidden md:hidden">
+                <span class="material-symbols-outlined text-3xl cursor-pointer text-white" id="nav-close">close</span>
+            </div>
+            <h3 class="font-semibold text-lg text-white">نام سایت</h3>
+        </div>
+        <!-- Hamburger Menu -->
+        <div id="nav-menu" class="w-screen absolute top-0">
+            <ul class="w-full flex items-center gap-6 justify-start px-6 h-12 bg-zinc-600">
+                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition"><a href="home.html">خانه</a></li>
+                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition"><a href="#">خرید وبسایت</a></li>
+                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition"><a href="weblog.html">وبلاگ ما</a></li>
+                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition"><a href="team.html">تیم ما</a></li>
+                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition"><a href="#">درباره ما</a></li>
+            </ul>
+        </div>
+    </nav>
     <section class="h-screen w-full swiper mySwiper">
         <div class="w-full h-full swiper-wrapper">
             <div class="w-full h-full swiper-slide overflow-hidden before:absolute before:h-full before:w-full">
@@ -94,6 +88,6 @@
             },
         });
         </script>
-    <script src="../js/app.js"></script>  
+    <script src="../js/navbar.js"></script>
 </body>
 </html>

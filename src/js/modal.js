@@ -1,13 +1,7 @@
-$ = document
-
-const navMenu = $.querySelector('#nav-menu')
-const btnMenu = $.querySelector('#btn-menu')
-const closeMenu = $.querySelector('#close-menu')
-const btnOpenModal = $.querySelector('#change-sort-type')
-const modal = $.querySelector('#modal')
-const btnCloseModal = $.querySelector('#close-modal')
-const modalBoxItems = $.querySelectorAll('.modal-item')
-
+const btnOpenModal = document.querySelector('#change-sort-type')
+const modal = document.querySelector('#modal')
+const btnCloseModal = document.querySelector('#close-modal')
+const modalBoxItems = document.querySelectorAll('.modal-item')
 
 function setSearchType (event) {
     modalBoxItems.forEach(function (item) {
@@ -33,17 +27,8 @@ function closeModal () {
     modal.classList.add('-top-75')
 }
 
-btnMenu.addEventListener('click', function () {
-    navMenu.classList.add('right-0')
-    navMenu.classList.remove('-right-48')
-})
-closeMenu.addEventListener('click', function () {
-    navMenu.classList.add('-right-48')
-    navMenu.classList.remove('right-0')
-})
-
 btnOpenModal.addEventListener('click', openModal)
-btnCloseModal.addEventListener('click', closeMenu)
+btnCloseModal.addEventListener('click', closeModal)
 
 modalBoxItems.forEach(function (item) {
     item.addEventListener('click', function (event) {
