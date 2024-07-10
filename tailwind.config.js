@@ -3,7 +3,7 @@ module.exports = {
   darkMode: 'selector',
   content: [
     "./src/pages/*.html",
-    "./src/js/app.js"
+    "./src/js/*.js"
   ],
   theme: {
     extend: {
