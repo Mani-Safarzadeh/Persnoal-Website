@@ -21,10 +21,12 @@ function setSearchType (event) {
 function openModal () {
     modal.classList.remove('-top-75')
     modal.classList.add('top-1/4')
+    document.body.classList.add('modal-active');
 }
 function closeModal () {
     modal.classList.remove('top-1/4')
     modal.classList.add('-top-75')
+    document.body.classList.remove('modal-active');
 }
 
 btnOpenModal.addEventListener('click', openModal)

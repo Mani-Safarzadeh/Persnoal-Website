@@ -2,9 +2,7 @@ const input = document.querySelector('#input-phone')
 const btnSumbitPhone = document.querySelector('#btn-sumbit-phone')
 let phoneNumber;
 
-btnSumbitPhone.onclick = function () {
-    phoneNumber = String(input.value)
-
+function checkPhoneNumber (phoneNumber) {
     if (phoneNumber.length !== 11 ) {
         alert('شماره باید شامل 11 کارکتر باشد')
         input.value = ''
@@ -16,4 +14,9 @@ btnSumbitPhone.onclick = function () {
         console.log('passed')
         // radman do the back-end
     }
+}  
+
+btnSumbitPhone.onclick = function () {
+    phoneNumber = String(input.value)
+    checkPhoneNumber(phoneNumber)
 }

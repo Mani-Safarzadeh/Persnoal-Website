@@ -24,6 +24,10 @@ module.exports = {
       },
       borderWidth: {
         '1': '1px'
+      },
+      colors: {
+        '#DECBA4': '#DECBA4',
+        '#3E5151': '#3E5151'
       }
     },
   },
@@ -32,7 +36,7 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/aspect-ratio'),
-    // ...
+    require('@tailwindcss/forms'),
   ],
 }
 

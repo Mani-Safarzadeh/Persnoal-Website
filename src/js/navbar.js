@@ -19,6 +19,3 @@ navClose.onclick = function () {
     navClose.parentElement.classList.remove('block')
     navClose.parentElement.classList.add('hidden')
 }
-window.onscroll = function (event) {
-    console.log(event)
-}
