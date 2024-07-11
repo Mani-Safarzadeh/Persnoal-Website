@@ -12,7 +12,7 @@
 </head>
 <body class="font-vazir bg-gray-200">
     <!-- Nav Bar -->
-    <nav class="flex flex-col sticky top-0 max-w-screen-2xl">
+    <nav class="flex flex-col sticky top-0 max-w-screen-2xl whitespace-nowrap">
         <div class="bg-zinc-700 h-16 flex justify-between items-center px-6 t-0 z-10">
             <ul class="hidden md:flex items-center gap-6">
                 <!-- Nav Bar Items -->
@@ -20,7 +20,7 @@
                 <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition duration-150"><a href="buy_website.html">خرید وبسایت</a></li>
                 <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition duration-150"><a href="weblog.html">وبلاگ ما</a></li>
                 <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition duration-150"><a href="team.html">تیم ما</a></li>
-                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition duration-150"><a href="#">درباره ما</a></li>
+                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition duration-150"><a href="about_us.html">درباره ما</a></li>
             </ul>
             <!-- MenuIcon -->
             <div class="block md:hidden">
@@ -34,53 +34,55 @@
         <!-- Hamburger Menu -->
         <div id="nav-menu" class="w-full absolute top-0">
             <ul class="flex items-center gap-6 justify-start px-6 h-12 bg-zinc-600">
-                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition"><a href="home.html">خانه</a></li>
-                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition"><a href="buy_website.html">خرید وبسایت</a></li>
-                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition"><a href="weblog.html">وبلاگ ما</a></li>
-                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition"><a href="team.html">تیم ما</a></li>
-                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition"><a href="#">درباره ما</a></li>
+                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition"><a class="text-sm sm:text-base" href="home.html">خانه</a></li>
+                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition"><a class="text-sm sm:text-base" href="buy_website.html">خرید وبسایت</a></li>
+                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition"><a class="text-sm sm:text-base" href="weblog.html">وبلاگ ما</a></li>
+                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition"><a class="text-sm sm:text-base" href="team.html">تیم ما</a></li>
+                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition"><a class="text-sm sm:text-base" href="about_us.html">درباره ما</a></li>
             </ul>
         </div>
     </nav>
-    <main class="my-10">
+    <!-- introduction -->
+    <article class="my-5">
         <div class="flex flex-col items-center text-center">
             <h1 class="font-bold text-zinc-900 text-2xl mb-2">تیم ما</h1>
-            <p class="mx-4 my-3 sm:mx-6 md:mx-8 lg:mx-10 xl:mx-12 2xl:mx-14">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam adipisci expedita labore ducimus recusandae, animi minus! Non excepturi ipsum sapiente quidem sequi iste sunt vel id, nesciunt laborum tenetur!</p>
-        </div>
-        <div class="flex items-center justify-evenly flex-wrap">
-            <div class="w-56 h-80 bg-white mx-4 my-3 shadow-xl flex flex-col items-center rounded-lg">
-                <div class="border-b-neutral-300 border-b-1 w-full flex flex-col items-center">
-                    <img class="rounded-full w-20 h-20 p-0.5 bg-gray-900/70 shadow-lg mt-4" src="../img/radman.jpg" alt="radman">
-                    <h3 class="text-xl font-semibold mb-2 text-neutral-700">رادمان منتظر</h3>
+            <p class="mx-4 my-3 sm:mx-6 md:mx-8 lg:mx-10 xl:mx-12 2xl:mx-14">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز </p>
+    </article>
+    <!-- team member cards -->
+    <main class="my-5 mx-2">
+        <div class="flex items-center justify-evenly flex-wrap gap-4">
+            <div class="bg-white flex flex-col items-center max-w-56 max-h-88 rounded-lg shadow-lg gap-1 p-3">
+                <div class="flex flex-col items-center p-2 w-full border-b-1 border-neutral-900/70">
+                    <img class="rounded-full p-0.5 w-20 h-20 bg-gray-900/70" src="../img/radman.jpg" alt="radman">
+                    <h3 class="text-lg md:text-xl font-semibold text-neutral-900">رادمان منتظر</h3>
                 </div>
-                <div class="flex flex-col items-center justify-center">
-                    <h4 class="my-1 tracking-tighter">برنامه نویس بک اند</h4>
-                    <p class="text-sm leading-5 mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, repellat. Voluptatum beatae voluptatem sequi quas nemo, facere officiis, </p>
+                <div class="flex flex-col px-2 border-b-1 border-neutral-900/70 w-full">
+                    <h4 class="tracking-tight self-center mb-1">برنامه نویس بک اند</h4>
+                    <p class="tracking-tighter text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز </p>
                 </div>
-                <div>
+                <div class="flex justify-center items-center px-2 pb-1">
                     <i class='bx bxl-telegram text-neutral-700 text-lg px-1 cursor-pointer p-1'></i>
                     <i class='bx bxl-linkedin-square text-neutral-700 text-xl px-1 cursor-pointer p-1'></i>
                     <i class='bx bxl-github text-neutral-700 text-xl px-1 cursor-pointer p-1'></i>
                     <i class='bx bxl-instagram-alt text-neutral-700 text-xl px-1 cursor-pointer p-1' ></i>
                 </div>
             </div>
-            <div class="w-56 h-80 bg-white mx-4 my-3 shadow-xl flex flex-col items-center rounded-lg">
-                <div class="border-b-neutral-300 border-b-1 w-full flex flex-col items-center">
-                    <img class="rounded-full w-20 h-20 p-0.5 bg-gray-900/70 shadow-lg mt-4" src="../img/mani.jpg" alt="radman">
-                    <h3 class="text-xl font-semibold mb-2 text-neutral-700">مانی صفرزاده</h3>
+            <div class="bg-white flex flex-col items-center max-w-56 max-h-88 rounded-lg shadow-lg gap-1 p-3">
+                <div class="flex flex-col items-center p-2 w-full border-b-1 border-neutral-900/70">
+                    <img class="rounded-full p-0.5 w-20 h-20 bg-gray-900/70" src="../img/mani.jpg" alt="radman">
+                    <h3 class="text-lg md:text-xl font-semibold text-neutral-900">مانی صفرزاده</h3>
                 </div>
-                <div class="flex flex-col items-center justify-center">
-                    <h4 class="my-1 tracking-tighter">برنامه نویس فرانت اند</h4>
-                    <p class="text-sm leading-5 mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, repellat. Voluptatum beatae voluptatem sequi quas nemo, facere officiis, </p>
+                <div class="flex flex-col px-2 border-b-1 border-neutral-900/70 w-full">
+                    <h4 class="tracking-tight self-center mb-1">برنامه نویس فرانت اند</h4>
+                    <p class="tracking-tighter text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز </p>
                 </div>
-                <div>
+                <div class="flex justify-center items-center px-2 pb-1">
                     <i class='bx bxl-telegram text-neutral-700 text-lg px-1 cursor-pointer p-1'></i>
-                    <i class='bx bxl-linkedin-square text-neutral-700 text-xl px-1 cursor-pointer p-1' ></i>
+                    <i class='bx bxl-linkedin-square text-neutral-700 text-xl px-1 cursor-pointer p-1'></i>
                     <i class='bx bxl-github text-neutral-700 text-xl px-1 cursor-pointer p-1'></i>
                     <i class='bx bxl-instagram-alt text-neutral-700 text-xl px-1 cursor-pointer p-1' ></i>
                 </div>
             </div>
-        </div>
     </main>
     <footer class="max-w-screen-2xl bg-gray-100 text-black flex flex-col">
         <div class="flex flex-wrap gap-y-10 sm:gap-y-6 gap-x-10 p-6 items-center justify-evenly">

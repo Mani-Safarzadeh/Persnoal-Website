@@ -19,6 +19,7 @@ module.exports = {
         '29': '116px'
       },
       spacing: {
+        '88': '22rem',
         '100': '25rem',
         '104': '26rem'
       },
@@ -26,8 +27,7 @@ module.exports = {
         '1': '1px'
       },
       colors: {
-        '#DECBA4': '#DECBA4',
-        '#3E5151': '#3E5151'
+        '#434343': '#434343'
       }
     },
   },

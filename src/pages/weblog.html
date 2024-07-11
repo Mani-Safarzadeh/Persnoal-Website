@@ -10,9 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>وبلاگ ما</title>
 </head>
-<body class="font-vazir bg-gray-200 backdrop-filter backdrop-blur-lg">
-    <!-- Nav Bar -->
-    <nav class="flex flex-col sticky top-0  max-w-screen-2xl">
+<body class="font-vazir bg-gray-200">
+    <nav class="flex flex-col sticky top-0 z-50 max-w-screen-2xl whitespace-nowrap">
         <div class="bg-zinc-700 h-16 flex justify-between items-center px-6 t-0 z-10">
             <ul class="hidden md:flex items-center gap-6">
                 <!-- Nav Bar Items -->
@@ -20,7 +19,7 @@
                 <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition duration-150"><a href="buy_website.html">خرید وبسایت</a></li>
                 <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition duration-150"><a href="weblog.html">وبلاگ ما</a></li>
                 <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition duration-150"><a href="team.html">تیم ما</a></li>
-                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition duration-150"><a href="#">درباره ما</a></li>
+                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition duration-150"><a href="about_us.html">درباره ما</a></li>
             </ul>
             <!-- MenuIcon -->
             <div class="block md:hidden">
@@ -32,31 +31,30 @@
             <h3 class="font-semibold text-lg text-white">نام سایت</h3>
         </div>
         <!-- Hamburger Menu -->
-        <div id="nav-menu" class="w-full absolute top-0">
+        <div id="nav-menu" class="absolute top-0 w-full">
             <ul class="flex items-center gap-6 justify-start px-6 h-12 bg-zinc-600">
-                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition"><a href="home.html">خانه</a></li>
-                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition"><a href="buy_website.html">خرید وبسایت</a></li>
-                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition"><a href="weblog.html">وبلاگ ما</a></li>
-                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition"><a href="team.html">تیم ما</a></li>
-                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition"><a href="#">درباره ما</a></li>
+                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition"><a class="text-sm sm:text-base" href="home.html">خانه</a></li>
+                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition"><a class="text-sm sm:text-base" href="buy_website.html">خرید وبسایت</a></li>
+                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition"><a class="text-sm sm:text-base" href="weblog.html">وبلاگ ما</a></li>
+                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition"><a class="text-sm sm:text-base" href="team.html">تیم ما</a></li>
+                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition"><a class="text-sm sm:text-base" href="about_us.html">درباره ما</a></li>
             </ul>
         </div>
     </nav>
-    <section class="my-6">
-        <div class="flex flex-col items-center my-4">
-            <div class="flex flex-col items-center">
-                <h2 class="text-3xl font-bold my-2">وبلاگ</h2>
-                <span class="block text-gray-600 mb-8">0 مقاله</span>
+    <!-- section -->  
+    <section class="my-6 max-w-screen-2xl">
+        <div class="flex flex-col items-center my-4 w-full">
+            <div class="flex flex-col items-center gap-4 mt-2 mb-6">
+                <h2 class="text-3xl font-bold">وبلاگ</h2>
+                <span class="block text-gray-600">0 مقاله</span>
             </div>
-            <div class="flex flex-col items-center justify-center md:flex-row md:items-start">
-                <div class="mb-4">
-                    <form id="search-journal" class="flex items-center justify-between bg-white rounded-xl shadow-xl py-4 mx-2" action="#">
-                        <input class="focus:border-blue-600 focus:border-2 outline-none px-16" placeholder="جستجوی مقالات" type="text" name="journal" id="journal-input" spellcheck="false">
-                        <span class="material-symbols-outlined cursor-pointer px-4">search</span>
-                    </form>
-                </div>
-                <div class="mb-4 cursor-pointer">
-                    <button id="change-sort-type" class="flex items-center justify-center bg-white rounded-2xl shadow-xl hover:bg-blue-600 hover:text-white transition duration-150 py-4 px-20 mx-2">
+            <div class="flex flex-col items-center justify-center gap-2 sm:flex-row w-full">
+                <form class="relative" action="#">
+                    <input class="outline-none border-neutral-900/70 rounded-lg shadow-lg py-2 px-5" placeholder="جستجوی مقالات" type="text" name="journal" id="journal-input" spellcheck="false">
+                    <span class="material-symbols-outlined cursor-pointer absolute top-2 left-3">search</span>
+                </form>
+                <div class="mb-4 cursor-pointer sm:mb-0">
+                    <button id="change-sort-type" class="flex items-center justify-center bg-white rounded-2xl shadow-xl hover:bg-blue-600 hover:text-white transition duration-150 py-2 px-8 border-neutral-900/70 border-1">
                         <span class="material-symbols-outlined cursor-pointer">swap_vert</span>
                         <span>جدیدترین</span>
                     </button>
@@ -64,42 +62,69 @@
             </div>
         </div>
     </section>
-    <section class="posts_wrap grid grid-rows-1 sm:grid-cols-2 xl:grid-cols-3 gap-5">
-        <div class="blog flex flex-col bg-white dark:bg-darker border border-neutral-100 dark:border-none overflow-hidden rounded-2xl z-0">
-            <div class="blog-banner relative h-[182px] overflow-hidden">
-                <img class="block w-full h-ful object-cover" src="../img/log1.jpg" alt="log1">
+    <!-- articles -->
+     <article class="flex flex-wrap items-center justify-evenly gap-4 mx-4 my-6">
+        <div class="flex flex-col items-center max-w-64 max-h-104 bg-white rounded-lg shadow-lg">
+            <div class="w-64 h-48 overflow-hidden">
+                <img class="block w-full h-full object-cover rounded-t-lg" src="../img/log1.jpg" alt="blog_image">
             </div>
-            <div class="flex-grow px-5 py-3">
-                <h4 class="line-clamp-2 mb-3 font-bold">چالش های برنامه نویسی شبکه و هوش مصنوعی</h4>
-                <p class="text-sm line-clamp-4 text-gray-900/70 px-2">Lorem ipsum dolor sit amet elit. Reiciendis unde necessitatibus quibusdam aspernatur quos voluptatem, fuga, beatae adipisci magnam accusantium praesentium repellendus ...</p>
+            <div class="flex flex-col gap-2 p-2">
+                <h4 class="tracking-tighter font-semibold">چالش های برنامه نویسی شبکه و هوش مصنوعی</h4>
+                <p class="tracking-tighter text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز ...</p>
             </div>
-            <div class="flex justify-between items-center text-slate-500 border-b border-b-neutral-200/70 mx-1 mb-2.5">
-                <div class="flex items-center gap-0.5 w-5 h-5">
-                    <span class="material-symbols-outlined" style="font-size: 1.4rem;">person</span>
-                    <span class="text-sm whitespace-nowrap">رادمان منتظر</span>
+            <div class="flex items-center justify-around py-2 w-full border-b-1 border-neutral-900/70">
+                <div class="flex items-center gap-0.5">
+                    <span class="material-symbols-outlined" style="font-size: 1.3rem;">person</span>
+                    <span class="text-sm whitespace-nowrap tracking-tighter">رادمان منتظر</span>
                 </div>
                 <div class="flex items-center gap-0.5">
-                    <span class="material-symbols-outlined w-5 h-5" style="font-size: 1.2rem;">calendar_today</span>
+                    <span class="material-symbols-outlined" style="font-size: 1.1rem;">calendar_today</span>
                     <span class="text-sm">xx/xx/xxxx</span>
                 </div>
             </div>
-            <div class="flex justify-center items-center mt-4 gap-2 cursor-pointer">
-                <a href="#">مطالعه مقاله</a>
+            <div class="flex justify-center items-center p-2 gap-2 cursor-pointer">
+                <a class="tracking-tighter font-semibold" href="#">مطالعه مقاله</a>
                 <i class='bx bxs-left-arrow-circle w-4 h-4'></i>
             </div>
-        </div> 
-    </section>
-    <div id="modal" class="w-3/4 bg-gray-300 shadow-xl rounded-xl flex flex-col gap-4 absolute -top-75 left-1/8 z-50 transition-all duration-700 p-5 backdrop-blur-lg">
+        </div>
+        <div class="flex flex-col items-center max-w-64 max-h-104 bg-white rounded-lg shadow-lg">
+            <div class="w-64 h-48 overflow-hidden">
+                <img class="block w-full h-full object-cover rounded-t-lg" src="../img/log2.jpg" alt="blog_image">
+            </div>
+            <div class="flex flex-col gap-2 p-2">
+                <h4 class="tracking-tighter font-semibold">چالش های برنامه نویسی شبکه و هوش مصنوعی</h4>
+                <p class="tracking-tighter text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز ...</p>
+            </div>
+            <div class="flex items-center justify-around py-2 w-full border-b-1 border-neutral-900/70">
+                <div class="flex items-center gap-0.5">
+                    <span class="material-symbols-outlined" style="font-size: 1.3rem;">person</span>
+                    <span class="text-sm whitespace-nowrap tracking-tighter">مانی صفرزاده</span>
+                </div>
+                <div class="flex items-center gap-0.5">
+                    <span class="material-symbols-outlined" style="font-size: 1.1rem;">calendar_today</span>
+                    <span class="text-sm">xx/xx/xxxx</span>
+                </div>
+            </div>
+            <div class="flex justify-center items-center p-2 gap-2 cursor-pointer">
+                <a class="tracking-tighter font-semibold" href="#">مطالعه مقاله</a>
+                <i class='bx bxs-left-arrow-circle w-4 h-4'></i>
+            </div>
+        </div>
+     </article>
+    
+    <!-- modal -->
+    <div id="modal" class="w-4/5 sm:3/4 md:w-2/3 lg:w-1/2 bg-gray-300 shadow-xl rounded-xl flex flex-col gap-4 absolute -top-75 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-40 transition-all duration-700 p-5">
         <div class="flex items-center justify-between px-4">
             <h5 class="font-lg mt-2 mb-1">مرتب سازی بر اساس</h5>
             <span class="material-symbols-outlined cursor-pointer" id="close-modal">close</span>
         </div>
         <div class="flex flex-col gap-2">
-            <div class="modal-item cursor-pointer bg-blue-600 rounded-lg shadow-lg m-1 p-4 text-white">جدیدترین</div>
+            <div class="modal-item cursor-pointer bg-neutral-900/70 rounded-lg shadow-lg m-1 p-4 text-white">جدیدترین</div>
             <div class="modal-item cursor-pointer bg-white rounded-lg shadow-lg m-1 p-4 text-black">قدیمی ترین</div>
             <div class="modal-item cursor-pointer bg-white rounded-lg shadow-lg m-1 p-4 text-black">محبوب ترین</div>
         </div>
     </div>
+    <!-- footer -->
     <footer class="max-w-screen-2xl bg-gray-100 text-black flex flex-col">
         <div class="flex flex-wrap gap-y-10 sm:gap-y-6 gap-x-10 p-6 items-center justify-evenly">
             <div class="min-w-36 max-w-48 flex flex-col gap-y-3">
