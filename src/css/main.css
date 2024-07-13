@@ -4,12 +4,13 @@
 
 @layer base {
     @font-face {
-        font-family: "Vazir";
-        src :  url(../fonts/Vazir-Bold.eot);
-        src : url(../fonts/Vazir-Bold.eot) format("embedded-opentype"),
-                url(../fonts/Vazir-Bold.woff2) format("woff2"),          
-                url(../fonts/Vazir-Bold.woff) format("woff"),
-                url(../fonts/Vazir-Bold.ttf) format("truetype");
-        font-weight: bold;
+      font-family: 'vazir';
+      font-style: normal;
+      font-weight: 400;
+      src : url(../fonts/Vazir-Bold.eot);
+      src : url(../fonts/Vazir-Bold.eot) format("embedded-opentype"),
+            url(../fonts/Vazir-Bold.woff2) format("woff2"),          
+            url(../fonts/Vazir-Bold.woff) format("woff"),
+            url(../fonts/Vazir-Bold.ttf) format("truetype");
     }
-}
+  }

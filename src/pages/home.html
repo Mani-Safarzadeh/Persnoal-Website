@@ -4,24 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="../../dist/tailwind.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../../dist/tailwind.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>خانه</title>
 </head>
-<body class="font-vazir bg-gray-200">
+<body class="font-vazir bg-#D9D9D9 text-#353535">
     <!-- Nav Bar -->
     <nav class="flex flex-col sticky top-0 z-50 max-w-screen-2xl whitespace-nowrap">
-        <div class="bg-zinc-700 h-16 flex justify-between items-center px-6 t-0 z-10">
+        <div class="bg-#284B63 h-16 flex justify-between items-center px-6 t-0 z-10">
             <ul class="hidden md:flex items-center gap-6">
                 <!-- Nav Bar Items -->
-                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition duration-150"><a href="home.html">خانه</a></li>
-                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition duration-150"><a href="buy_website.html">خرید وبسایت</a></li>
-                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition duration-150"><a href="weblog.html">وبلاگ ما</a></li>
-                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition duration-150"><a href="team.html">تیم ما</a></li>
-                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition duration-150"><a href="about_us.html">درباره ما</a></li>
+                <li class="hover:text-#3C6E71 hover:transition rounded-lg hover:bg-#D9D9D9 text-#D9D9D9 transition"><a class="p-2" href="home.html">خانه</a></li>
+                <li class="hover:text-#3C6E71 hover:transition rounded-lg hover:bg-#D9D9D9 text-#D9D9D9 transition"><a class="p-2" href="buy_website.html">خرید وبسایت</a></li>
+                <li class="hover:text-#3C6E71 hover:transition rounded-lg hover:bg-#D9D9D9 text-#D9D9D9 transition"><a class="p-2" href="weblog.html">وبلاگ ما</a></li>
+                <li class="hover:text-#3C6E71 hover:transition rounded-lg hover:bg-#D9D9D9 text-#D9D9D9 transition"><a class="p-2" href="team.html">تیم ما</a></li>
             </ul>
             <!-- MenuIcon -->
             <div class="block md:hidden">
@@ -32,14 +31,13 @@
             </div>
             <h3 class="font-semibold text-lg text-white">نام سایت</h3>
         </div>
-        <!-- Hamburger Menu -->
+        <!-- Mobile Nav -->
         <div id="nav-menu" class="absolute top-0 w-full">
-            <ul class="flex items-center gap-6 justify-start px-6 h-12 bg-zinc-600">
-                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition"><a class="text-sm sm:text-base" href="home.html">خانه</a></li>
-                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition"><a class="text-sm sm:text-base" href="buy_website.html">خرید وبسایت</a></li>
-                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition"><a class="text-sm sm:text-base" href="weblog.html">وبلاگ ما</a></li>
-                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition"><a class="text-sm sm:text-base" href="team.html">تیم ما</a></li>
-                <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition"><a class="text-sm sm:text-base" href="about_us.html">درباره ما</a></li>
+            <ul class="flex items-center gap-6 justify-start px-6 h-12 bg-#3C6E71">
+                <li class="hover:text-#353535 hover:transition rounded-lg hover:bg-#D9D9D9 text-#D9D9D9 transition"><a class="text-sm sm:text-base p-1.5" >خانه</a></li>
+                <li class="hover:text-#353535 hover:transition rounded-lg hover:bg-#D9D9D9 text-#D9D9D9 transition"><a class="text-sm sm:text-base p-1.5" >خرید وبسایت</a></li>
+                <li class="hover:text-#353535 hover:transition rounded-lg hover:bg-#D9D9D9 text-#D9D9D9 transition"><a class="text-sm sm:text-base p-1.5" >وبلاگ ما</a></li>
+                <li class="hover:text-#353535 hover:transition rounded-lg hover:bg-#D9D9D9 text-#D9D9D9 transition"><a class="text-sm sm:text-base p-1.5" >تیم ما</a></li>
             </ul>
         </div>
     </nav>
@@ -51,7 +49,7 @@
                 <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-full z-10">
                     <span class="text-white text-base sm:text-xl">Enjoy The Websites</span>
                     <h2 class="text-white text-2xl sm:text-4xl font-extrabold text-nowrap">We Put So Much Work In <br> Products and Websites</h2>
-                    <a class="inline-block py-1.5 px-6 rounded-2xl text-neutral-800 bg-white mt-6 hover:text-white hover:bg-orange-900 transition duration-150" href="team.html">تیم ما</a>
+                    <a id="slider-link" class="inline-block py-1.5 px-6 rounded-2xl text-#353535 bg-white mt-6 hover:bg-#3C6E71 hover:text-white transition duration-150" href="team.html">تیم ما</a>
                 </div>
             </div>
             <div class="w-full h-full swiper-slide overflow-hidden relative before:absolute before:h-full before:w-full">
@@ -59,7 +57,7 @@
                 <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-full z-10">
                     <span class="text-white text-base sm:text-xl">Enjoy The Websites</span>
                     <h2 class="text-white text-2xl sm:text-4xl font-extrabold text-nowrap">We Put So Much Work In <br> Products and Websites</h2>
-                    <a class="inline-block py-1.5 px-6 rounded-2xl text-neutral-800 bg-white mt-6 hover:text-white hover:bg-orange-900 transition duration-150" href="team.html">تیم ما</a>
+                    <a id="slider-link" class="inline-block py-1.5 px-6 rounded-2xl text-#353535 bg-white mt-6 hover:bg-#3C6E71 hover:text-white transition duration-150" href="team.html">تیم ما</a>
                 </div>
             </div>
             <div class="w-full h-full swiper-slide overflow-hidden relative before:absolute before:h-full before:w-full">
@@ -67,50 +65,51 @@
                 <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-full z-10">
                     <span class="text-white text-base sm:text-xl">Enjoy The Websites</span>
                     <h2 class="text-white text-2xl sm:text-4xl font-extrabold text-nowrap">We Put So Much Work In <br> Products and Websites</h2>
-                    <a class="inline-block py-1.5 px-6 rounded-2xl text-neutral-800 bg-white mt-6 hover:text-white hover:bg-orange-900 transition duration-150" href="team.html">تیم ما</a>
+                    <a id="slider-link" class="inline-block py-1.5 px-6 rounded-2xl text-#353535 bg-white mt-6 hover:bg-#3C6E71 hover:text-white transition duration-150" href="team.html">تیم ما</a>
                 </div>
             </div>
         </div>
-        <div class="swiper-button-next w-12 h-12 rounded-full bg-black opacity-60 text-white before:text-lg after:text-lg font-bold hover:bg-white hover:text-black transition duration-150"></div>
-        <div class="swiper-button-prev w-12 h-12 rounded-full bg-black opacity-60 text-white before:text-lg after:text-lg font-bold hover:bg-white hover:text-black transition duration-150"></div>
+        <div class="swiper-button-next w-12 h-12 rounded-full bg-#353535 opacity-60 text-white before:text-lg after:text-lg font-bold hover:bg-white hover:text-#353535 transition duration-150"></div>
+        <div class="swiper-button-prev w-12 h-12 rounded-full bg-#353535 opacity-60 text-white before:text-lg after:text-lg font-bold hover:bg-white hover:text-#353535 transition duration-150"></div>
         <div class="swiper-pagination"></div>
     </section>
-    <footer class="max-w-screen-2xl bg-gray-100 text-black flex flex-col">
+    <!-- footer -->
+    <footer class="max-w-screen-2xl bg-#FFFFFF text-#bg-#353535 flex flex-col">
         <div class="flex flex-wrap gap-y-10 sm:gap-y-6 gap-x-10 p-6 items-center justify-evenly">
             <div class="min-w-36 max-w-48 flex flex-col gap-y-3">
                 <h6>درباره ما</h6>
-                <p style="font-family: 'Poppins';" class="text-sm text-gray-900/70">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem blanditiis quidem</p>
+                <p class="text-sm text-gray-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem blanditiis quidem</p>
             </div>
-            <div class="min-w-36 flex flex-col gap-y-3 text-gray-900/70 text-sm">
-                <h6 class="text-black text-base">لینک های مفید</h6>
-                <a class="hover:text-neutral-600 transition" href="buy_website.html">خرید وبسایت</a>
-                <a class="hover:text-neutral-600 transition" href="team.html">تیم ما</a>
-                <a class="hover:text-neutral-600 transition" href="weblog.html">وبلاگ ما</a>
+            <div class="min-w-36 flex flex-col gap-y-3 text-sm">
+                <h6 class="text-base">لینک های مفید</h6>
+                <a class="hover:text-#353535 text-gray-500 transition" href="buy_website.html">خرید وبسایت</a>
+                <a class="hover:text-#353535 text-gray-500 transition" href="team.html">تیم ما</a>
+                <a class="hover:text-#353535 text-gray-500 transition" href="weblog.html">وبلاگ ما</a>
             </div>
             <div class="min-w-36 flex flex-col gap-y-3">
                 <h6>از اخبار مطلع شوید</h6>
                 <div class="flex flex-col gap-y-2">
-                    <input class="text-sm px-4 py-1 placeholder:text-sm outline-none focus:border-neutral-300 rounded-lg shadow-lg" type="text" spellcheck="false" id="input-phone" placeholder="شماره تلفن همراه">
-                    <button class="text-sm whitespace-nowrap bg-neutral-800 text-white px-4 py-1 rounded-md shadow-lg hover:text-neutral-600 hover:bg-white transition" id="btn-sumbit-phone">مشترک شوید</button>
+                    <input class="text-sm px-4 py-1 placeholder:text-sm outline-none focus:border-#D9D9D9 rounded-lg shadow-lg" type="text" spellcheck="false" id="input-phone" placeholder="شماره تلفن همراه">
+                    <button class="text-sm whitespace-nowrap bg-#353535 text-white px-4 py-1 rounded-md shadow-lg hover:text-#353535 hover:bg-white transition" id="btn-sumbit-phone">مشترک شوید</button>
                 </div>
             </div>
             <div class="min-w-36 flex flex-col gap-y-2">
                 <h6>شبکه های اجتماعی</h6>
-                <div id="insta" class="flex items-center gap-x-1 text-gray-900/70">
+                <div id="insta" class="flex items-center gap-x-1 text-#353535">
                     <i class='bx bxl-instagram-alt text-lg'></i>
-                    <a style="font-family: 'Poppins';" class="text-sm" href="#">https://www.instagram.com/</a>
+                    <a class="text-sm" href="#">https://www.instagram.com/</a>
                 </div>
-                <div id="tel" class="flex items-center gap-x-1 text-gray-900/70">
+                <div id="tel" class="flex items-center gap-x-1 text-#353535">
                     <i class='bx bxl-telegram text-lg'></i>
-                    <a style="font-family: 'Poppins';" class="text-sm" href="#">https://t.me/</a>
+                    <a class="text-sm" href="#">https://t.me/</a>
                 </div>
             </div>
         </div>
-        <div class="border-t-1 border-neutral-500 text-center py-2">
+        <div class="border-t-1 border-#D9D9D9 text-center py-2">
             <p>کلیه حقوق مادی و معنوی سایت برای نام سایت محفوظ است</p>
         </div>
     </footer>
-    
+    <!-- JavaScript Code -->
     <script src="../js/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {

@@ -10,10 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>تیم ما</title>
 </head>
-<body class="font-vazir bg-gray-200">
+<body class="font-vazir bg-#D9D9D9 text-#353535">
     <!-- Nav Bar -->
-    <nav class="flex flex-col sticky top-0 max-w-screen-2xl whitespace-nowrap">
-        <div class="bg-zinc-700 h-16 flex justify-between items-center px-6 t-0 z-10">
+    <nav class="flex flex-col sticky top-0 max-w-screen-2xl whitespace-nowrap shadow-2xl z-50">
+        <div class="bg-#284B63 h-16 flex justify-between items-center px-6 t-0 z-10">
             <ul class="hidden md:flex items-center gap-6">
                 <!-- Nav Bar Items -->
                 <li class="active:bg-slate-600 hover:text-white text-neutral-300 transition duration-150"><a href="home.html">خانه</a></li>
@@ -44,47 +44,59 @@
     </nav>
     <!-- introduction -->
     <article class="my-5">
-        <div class="flex flex-col items-center text-center">
+        <div class="flex flex-col items-center text-center text-#353535">
             <h1 class="font-bold text-zinc-900 text-2xl mb-2">تیم ما</h1>
             <p class="mx-4 my-3 sm:mx-6 md:mx-8 lg:mx-10 xl:mx-12 2xl:mx-14">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز </p>
     </article>
     <!-- team member cards -->
     <main class="my-5 mx-2">
         <div class="flex items-center justify-evenly flex-wrap gap-4">
-            <div class="bg-white flex flex-col items-center max-w-56 max-h-88 rounded-lg shadow-lg gap-1 p-3">
-                <div class="flex flex-col items-center p-2 w-full border-b-1 border-neutral-900/70">
-                    <img class="rounded-full p-0.5 w-20 h-20 bg-gray-900/70" src="../img/radman.jpg" alt="radman">
-                    <h3 class="text-lg md:text-xl font-semibold text-neutral-900">رادمان منتظر</h3>
+            <div class="bg-white flex flex-col items-center max-w-56 max-h-80 rounded-3xl rounded-b-5xl shadow-lg gap-1 p-3 mt-10">
+                <div class="relative w-60">
+                    <div class="absolute -top-14 flex items-center gap-4 justify-around p-2 w-full border-b-1 border-neutral-900/70 bg-gradient-to-br from-#3C6E71 to-#284B63 rounded-lg shadow-lg">
+                        <div class="relative w-full">
+                            <img class="rounded-full p-0.5 w-full h-full bg-#284B63" src="../img/radman.jpg" alt="radman">
+                        </div>
+                        <div class="flex flex-col items-center rounded-bl-5xl rounded-br-full">
+                            <h3 class="text-lg md:text-xl font-semibold text-#D9D9D9 whitespace-nowrap">رادمان منتظر</h3>
+                            <span class="text-xs text-#D9D9D9">09374646412</span>
+                            <span class="text-xs text-#D9D9D9">radman.cod110@gamil.com</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="flex flex-col px-2 border-b-1 border-neutral-900/70 w-full">
-                    <h4 class="tracking-tight self-center mb-1">برنامه نویس بک اند</h4>
-                    <p class="tracking-tighter text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز </p>
+                <div class="flex flex-col px-2 pt-8 pb-6 w-full">
+                    <h4 class="tracking-tight self-center mb-1 font-semibold text-#3C6E71">برنامه نویس بک اند</h4>
+                    <p class="tracking-tighter text-sm text-center">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز </p>
                 </div>
-                <div class="flex justify-center items-center px-2 pb-1">
-                    <i class='bx bxl-telegram text-neutral-700 text-lg px-1 cursor-pointer p-1'></i>
-                    <i class='bx bxl-linkedin-square text-neutral-700 text-xl px-1 cursor-pointer p-1'></i>
-                    <i class='bx bxl-github text-neutral-700 text-xl px-1 cursor-pointer p-1'></i>
-                    <i class='bx bxl-instagram-alt text-neutral-700 text-xl px-1 cursor-pointer p-1' ></i>
+                <div class="relative w-full flex items-center justify-center ">
+                    <div class=" bg-gradient-to-br from-#3C6E71 to-#284B63 absolute -bottom-5  flex justify-center items-center px-6 py-2 rounded-t-lg">
+                        <i class='bx bxl-telegram text-#D9D9D9 text-lg px-1 cursor-pointer p-1 hover:text-#3C6E71 hover:bg-#D9D9D9 rounded-lg hover:transition transition duration-500'></i>
+                        <i class='bx bxl-linkedin-square text-#D9D9D9 text-xl px-1 cursor-pointer p-1 hover:text-#3C6E71 hover:bg-#D9D9D9 rounded-lg hover:transition transition duration-500'></i>
+                        <i class='bx bxl-github text-#D9D9D9 text-xl px-1 cursor-pointer p-1 hover:text-#3C6E71 hover:bg-#D9D9D9 rounded-lg hover:transition transition duration-500'></i>
+                        <i class='bx bxl-instagram-alt text-#D9D9D9 text-xl px-1 cursor-pointer p-1 hover:text-#3C6E71 hover:bg-#D9D9D9 rounded-lg hover:transition transition duration-500' ></i>
+                    </div>
                 </div>
             </div>
             <div class="bg-white flex flex-col items-center max-w-56 max-h-88 rounded-lg shadow-lg gap-1 p-3">
-                <div class="flex flex-col items-center p-2 w-full border-b-1 border-neutral-900/70">
+                <div class="flex flex-col items-center p-2 w-full border-b-1 border-neutral-900/70 bg-#3C6E71">
                     <img class="rounded-full p-0.5 w-20 h-20 bg-gray-900/70" src="../img/mani.jpg" alt="radman">
-                    <h3 class="text-lg md:text-xl font-semibold text-neutral-900">مانی صفرزاده</h3>
+                    <h3 class="text-lg md:text-xl font-semibold text-white">مانی صفرزاده</h3>
                 </div>
                 <div class="flex flex-col px-2 border-b-1 border-neutral-900/70 w-full">
                     <h4 class="tracking-tight self-center mb-1">برنامه نویس فرانت اند</h4>
                     <p class="tracking-tighter text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز </p>
                 </div>
-                <div class="flex justify-center items-center px-2 pb-1">
-                    <i class='bx bxl-telegram text-neutral-700 text-lg px-1 cursor-pointer p-1'></i>
-                    <i class='bx bxl-linkedin-square text-neutral-700 text-xl px-1 cursor-pointer p-1'></i>
-                    <i class='bx bxl-github text-neutral-700 text-xl px-1 cursor-pointer p-1'></i>
-                    <i class='bx bxl-instagram-alt text-neutral-700 text-xl px-1 cursor-pointer p-1' ></i>
+                <div>
+                    <div class="flex justify-center items-center px-2 pb-1">
+                        <i class='bx bxl-telegram text-#284B63 text-lg px-1 cursor-pointer p-1'></i>
+                        <i class='bx bxl-linkedin-square text-#284B63 text-xl px-1 cursor-pointer p-1'></i>
+                        <i class='bx bxl-github text-#284B63 text-xl px-1 cursor-pointer p-1'></i>
+                        <i class='bx bxl-instagram-alt text-#284B63 text-xl px-1 cursor-pointer p-1' ></i>
+                    </div>
                 </div>
             </div>
     </main>
-    <footer class="max-w-screen-2xl bg-gray-100 text-black flex flex-col">
+    <footer class="max-w-screen-2xl bg-#434343 text-#353535 flex flex-col">
         <div class="flex flex-wrap gap-y-10 sm:gap-y-6 gap-x-10 p-6 items-center justify-evenly">
             <div class="min-w-36 max-w-48 flex flex-col gap-y-3">
                 <h6>درباره ما</h6>

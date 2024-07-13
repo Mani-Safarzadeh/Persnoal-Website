@@ -1,15 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: 'selector',
   content: [
     "./src/pages/*.html",
-    "./src/js/*.js"
+    "./src/js/*.js",
+    "./src/fonts/*.*"
   ],
   theme: {
+    fontFamily: {
+      'vazir': ['vazir', 'sans-serif']
+    },
     extend: {
-      fontFamily: {
-        'vazir': '\'Vazir\''
-      },
       inset: {
         '26' : '104px',
         '1/8': '12.5%',
@@ -27,16 +27,20 @@ module.exports = {
         '1': '1px'
       },
       colors: {
-        '#434343': '#434343'
+        '#353535': '#353535', // black
+        '#3C6E71': '#3C6E71', // green
+        '#FFFFFF': '#FFFFFF', // white
+        '#D9D9D9': '#D9D9D9', // gray
+        '#284B63': '#284B63' //  blue
+      },
+      borderRadius: {
+        '5xl': '5rem'
       }
     },
   },
   corePlugins: {
-    aspectRatio: true,
   },
   plugins: [
-    require('@tailwindcss/aspect-ratio'),
-    require('@tailwindcss/forms'),
   ],
 }
 
