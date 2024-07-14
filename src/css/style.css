@@ -1,3 +1,21 @@
-/* #slider-link:hover {
-    background-color: '#3C6E71';
-} */
+input[type=file]::file-selector-button {
+    border: none;
+    background: #284b63;
+    padding: .5rem;
+    margin-left: 1rem;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+  
+input[type=file]::file-selector-button:hover {
+    background: #fff;
+    color: #284b63;
+}
+
+  

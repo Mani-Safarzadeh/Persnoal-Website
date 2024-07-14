@@ -21,7 +21,9 @@ module.exports = {
       spacing: {
         '88': '22rem',
         '100': '25rem',
-        '104': '26rem'
+        '120': '30rem',
+        '150': '37.5rem',
+        '200': '50rem'
       },
       borderWidth: {
         '1': '1px'
