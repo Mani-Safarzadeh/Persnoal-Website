@@ -1,7 +1,7 @@
 dark mode
 home: samples :: done
-home: purpose
-home: weblogs
+home: purpose :: done
+home: weblogs :: done
 home: team
 home: why to trust
 
