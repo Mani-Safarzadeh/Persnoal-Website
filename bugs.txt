@@ -1,2 +1,2 @@
-horizontal scroll on pages
+horizontal scroll on pages:: fixed
 modal blur
