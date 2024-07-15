@@ -62,20 +62,7 @@
     </section>
     <!-- articles -->
      <article class="flex flex-wrap items-center justify-evenly gap-4 mx-4 my-6">
-        <!-- modal -->
-        <div id="modal" class="w-4/5 sm:3/4 md:w-2/3 lg:w-1/2 bg-gray-300 shadow-xl rounded-xl flex flex-col gap-4 absolute -top-75 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-40 transition-all duration-700 p-5">
-            <div class="flex items-center justify-between px-4">
-                <h5 class="font-lg mt-2 mb-1">مرتب سازی بر اساس</h5>
-                <span class="material-symbols-outlined cursor-pointer" id="close-modal">close</span>
-            </div>
-            <div class="flex flex-col gap-2">
-                <div class="modal-item cursor-pointer bg-#3C6E71 rounded-lg shadow-lg m-1 p-4 text-white">جدیدترین</div>
-                <div class="modal-item cursor-pointer bg-white rounded-lg shadow-lg m-1 p-4 text-#353535">قدیمی ترین</div>
-                <div class="modal-item cursor-pointer bg-white rounded-lg shadow-lg m-1 p-4 text-#353535">محبوب ترین</div>
-            </div>
-        </div>
-        <!-- articles -->
-        <div class="flex flex-col items-center max-w-64 max-h-104 bg-white rounded-lg shadow-lg">
+        <div class="article flex flex-col items-center max-w-64 max-h-104 bg-white rounded-lg shadow-lg">
             <div class="w-64 h-48 overflow-hidden">
                 <img class="block w-full h-full object-cover rounded-t-lg" src="../img/log1.jpg" alt="blog_image">
             </div>
@@ -98,7 +85,7 @@
                 <i class='bx bxs-left-arrow-circle w-4 h-4 text-#284B63'></i>
             </div>
         </div>
-        <div class="flex flex-col items-center max-w-64 max-h-104 bg-white rounded-lg shadow-lg">
+        <div class="article flex flex-col items-center max-w-64 max-h-104 bg-white rounded-lg shadow-lg">
             <div class="w-64 h-48 overflow-hidden">
                 <img class="block w-full h-full object-cover rounded-t-lg" src="../img/log2.jpg" alt="blog_image">
             </div>
@@ -121,7 +108,7 @@
                 <i class='bx bxs-left-arrow-circle w-4 h-4 text-#284B63'></i>
             </div>
         </div>
-        <div class="flex flex-col items-center max-w-64 max-h-104 bg-white rounded-lg shadow-lg">
+        <div class="article flex flex-col items-center max-w-64 max-h-104 bg-white rounded-lg shadow-lg">
             <div class="w-64 h-48 overflow-hidden">
                 <img class="block w-full h-full object-cover rounded-t-lg" src="../img/log1.jpg" alt="blog_image">
             </div>
@@ -144,7 +131,7 @@
                 <i class='bx bxs-left-arrow-circle w-4 h-4 text-#284B63'></i>
             </div>
         </div>
-        <div class="flex flex-col items-center max-w-64 max-h-104 bg-white rounded-lg shadow-lg">
+        <div class="article flex flex-col items-center max-w-64 max-h-104 bg-white rounded-lg shadow-lg">
             <div class="w-64 h-48 overflow-hidden">
                 <img class="block w-full h-full object-cover rounded-t-lg" src="../img/log2.jpg" alt="blog_image">
             </div>
@@ -167,7 +154,7 @@
                 <i class='bx bxs-left-arrow-circle w-4 h-4 text-#284B63'></i>
             </div>
         </div>
-        <div class="flex flex-col items-center max-w-64 max-h-104 bg-white rounded-lg shadow-lg">
+        <div class="article flex flex-col items-center max-w-64 max-h-104 bg-white rounded-lg shadow-lg">
             <div class="w-64 h-48 overflow-hidden">
                 <img class="block w-full h-full object-cover rounded-t-lg" src="../img/log1.jpg" alt="blog_image">
             </div>
@@ -190,7 +177,7 @@
                 <i class='bx bxs-left-arrow-circle w-4 h-4 text-#284B63'></i>
             </div>
         </div>
-        <div class="flex flex-col items-center max-w-64 max-h-104 bg-white rounded-lg shadow-lg">
+        <div class="article flex flex-col items-center max-w-64 max-h-104 bg-white rounded-lg shadow-lg">
             <div class="w-64 h-48 overflow-hidden">
                 <img class="block w-full h-full object-cover rounded-t-lg" src="../img/log2.jpg" alt="blog_image">
             </div>
@@ -213,7 +200,7 @@
                 <i class='bx bxs-left-arrow-circle w-4 h-4 text-#284B63'></i>
             </div>
         </div>
-        <div class="flex flex-col items-center max-w-64 max-h-104 bg-white rounded-lg shadow-lg">
+        <div class="article flex flex-col items-center max-w-64 max-h-104 bg-white rounded-lg shadow-lg">
             <div class="w-64 h-48 overflow-hidden">
                 <img class="block w-full h-full object-cover rounded-t-lg" src="../img/log1.jpg" alt="blog_image">
             </div>
@@ -236,7 +223,7 @@
                 <i class='bx bxs-left-arrow-circle w-4 h-4 text-#284B63'></i>
             </div>
         </div>
-        <div class="flex flex-col items-center max-w-64 max-h-104 bg-white rounded-lg shadow-lg">
+        <div class="article flex flex-col items-center max-w-64 max-h-104 bg-white rounded-lg shadow-lg">
             <div class="w-64 h-48 overflow-hidden">
                 <img class="block w-full h-full object-cover rounded-t-lg" src="../img/log2.jpg" alt="blog_image">
             </div>
@@ -297,6 +284,19 @@
             <p>کلیه حقوق مادی و معنوی سایت برای نام سایت محفوظ است</p>
         </div>
     </footer>
+
+    <!-- modal -->
+    <div id="modal" class="w-4/5 sm:3/4 md:w-2/3 lg:w-1/2 bg-gray-300 shadow-xl rounded-xl flex flex-col gap-4 absolute -top-75 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-40 transition-all duration-700 p-5">
+        <div class="flex items-center justify-between px-4">
+            <h5 class="font-lg mt-2 mb-1">مرتب سازی بر اساس</h5>
+            <span class="material-symbols-outlined cursor-pointer" id="close-modal">close</span>
+        </div>
+        <div class="flex flex-col gap-2">
+            <div class="modal-item cursor-pointer bg-#3C6E71 rounded-lg shadow-lg m-1 p-4 text-white">جدیدترین</div>
+            <div class="modal-item cursor-pointer bg-white rounded-lg shadow-lg m-1 p-4 text-#353535">قدیمی ترین</div>
+            <div class="modal-item cursor-pointer bg-white rounded-lg shadow-lg m-1 p-4 text-#353535">محبوب ترین</div>
+        </div>
+    </div>
 
     <script src="../js/modal.js"></script>
     <script src="../js/navbar.js"></script>
