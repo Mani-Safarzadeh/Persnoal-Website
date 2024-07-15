@@ -44,6 +44,10 @@ module.exports = {
       },
       fontSize: {
         '2xs': '.6rem'
+      },
+      screens: {
+        '2xs': '375px',
+        'xs': '460px'
       }
     },
   },
