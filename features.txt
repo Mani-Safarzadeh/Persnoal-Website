@@ -2,10 +2,8 @@ dark mode
 home: samples :: done
 home: purpose :: done
 home: weblogs :: done
-home: team
-home: why to trust
+home: team :: done
+home: why to trust :: done
 
 team: feebacks
 team: lg size call us
-
-login
