@@ -12,7 +12,7 @@
 </head>
 <body class="font-vazir bg-#D9D9D9 text-#353535">
     <!-- Nav Bar -->
-    <nav class="flex flex-col sticky top-0 z-50 max-w-screen whitespace-nowrap">
+    <nav class="flex flex-col sticky top-0 z-50 w-screen whitespace-nowrap">
         <div class="bg-#284B63 h-16 flex justify-between items-center px-6 t-0 z-10">
             <ul class="hidden md:flex items-center gap-6">
                 <!-- Nav Bar Items -->
@@ -31,17 +31,17 @@
             <h3 class="font-semibold text-lg text-white">نام سایت</h3>
         </div>
         <!-- Mobile Nav -->
-        <div id="nav-menu" class="absolute top-0 w-full">
+        <div id="nav-menu" class="absolute top-0 w-full transition-all">
             <ul class="flex items-center gap-6 justify-start px-6 h-12 bg-#3C6E71">
-                <li class="hover:text-#353535 hover:transition rounded-lg hover:bg-#D9D9D9 text-#D9D9D9 transition"><a class="text-sm sm:text-base p-1.5" >خانه</a></li>
-                <li class="hover:text-#353535 hover:transition rounded-lg hover:bg-#D9D9D9 text-#D9D9D9 transition"><a class="text-sm sm:text-base p-1.5" >خرید وبسایت</a></li>
-                <li class="hover:text-#353535 hover:transition rounded-lg hover:bg-#D9D9D9 text-#D9D9D9 transition"><a class="text-sm sm:text-base p-1.5" >وبلاگ ما</a></li>
-                <li class="hover:text-#353535 hover:transition rounded-lg hover:bg-#D9D9D9 text-#D9D9D9 transition"><a class="text-sm sm:text-base p-1.5" >تیم ما</a></li>
+                <li class="hover:text-#353535 hover:transition rounded-lg hover:bg-#D9D9D9 text-#D9D9D9 transition"><a class="text-sm sm:text-base p-1.5" href="home.html">خانه</a></li>
+                <li class="hover:text-#353535 hover:transition rounded-lg hover:bg-#D9D9D9 text-#D9D9D9 transition"><a class="text-sm sm:text-base p-1.5" href="buy_website.html">خرید وبسایت</a></li>
+                <li class="hover:text-#353535 hover:transition rounded-lg hover:bg-#D9D9D9 text-#D9D9D9 transition"><a class="text-sm sm:text-base p-1.5" href="weblog.html">وبلاگ ما</a></li>
+                <li class="hover:text-#353535 hover:transition rounded-lg hover:bg-#D9D9D9 text-#D9D9D9 transition"><a class="text-sm sm:text-base p-1.5" href="team.html">تیم ما</a></li>
             </ul>
         </div>
     </nav>
     <!-- overview -->
-    <section style="background: url(../img/development.jpg) no-repeat center center/cover;" id="section-header" class="max-w-screen relative h-100 md:h-150 lg:h-200 xl:h-screen mb-5">
+    <section style="background: url(../img/development.jpg) no-repeat center center/cover;" id="section-header" class="w-screen relative h-100 md:h-150 lg:h-200 xl:h-screen mb-5">
         <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center bg-#353535 bg-opacity-50 rounded-lg shadow-lg text-white p-6 whitespace-nowrap 2xl:p-10">
             <h1 class="text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold my-4">تلاش های ما نتیجه اعتماد شماست</h1>
             <p class="tracking-tighter lg:text-lg mb-2 2xl:text-xl">وبسایت های زیبا، تعاملی و سریع با تلاش تیم ما</p>
@@ -128,34 +128,35 @@
         </div>
     </section>
 
-    <footer class="max-w-screen bg-gray-100 text-black flex flex-col">
+    <!-- footer -->
+    <footer class="w-screen bg-#FFFFFF text-#bg-#353535 flex flex-col">
         <div class="flex flex-wrap gap-y-10 sm:gap-y-6 gap-x-10 p-6 items-center justify-evenly">
             <div class="min-w-36 max-w-48 flex flex-col gap-y-3">
                 <h6>درباره ما</h6>
-                <p style="font-family: 'Poppins';" class="text-sm text-gray-900/70">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem blanditiis quidem</p>
+                <p class="text-sm text-gray-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem blanditiis quidem</p>
             </div>
-            <div class="min-w-36 flex flex-col gap-y-3 text-gray-900/70 text-sm">
-                <h6 class="text-black text-base">لینک های مفید</h6>
-                <a class="hover:text-neutral-600 transition" href="buy_website.html">خرید وبسایت</a>
-                <a class="hover:text-neutral-600 transition" href="team.html">تیم ما</a>
-                <a class="hover:text-neutral-600 transition" href="weblog.html">وبلاگ ما</a>
+            <div class="min-w-36 flex flex-col gap-y-3 text-sm">
+                <h6 class="text-base">لینک های مفید</h6>
+                <a class="hover:text-#353535 text-gray-500 transition" href="buy_website.html">خرید وبسایت</a>
+                <a class="hover:text-#353535 text-gray-500 transition" href="team.html">تیم ما</a>
+                <a class="hover:text-#353535 text-gray-500 transition" href="weblog.html">وبلاگ ما</a>
             </div>
             <div class="min-w-36 flex flex-col gap-y-3">
                 <h6>از اخبار مطلع شوید</h6>
                 <div class="flex flex-col gap-y-2">
-                    <input class="text-sm px-4 py-1 placeholder:text-sm outline-none focus:border-neutral-300 rounded-lg shadow-lg" type="text" spellcheck="false" id="input-phone" placeholder="شماره تلفن همراه">
-                    <button class="text-sm whitespace-nowrap bg-neutral-800 text-white px-4 py-1 rounded-md shadow-lg hover:text-neutral-600 hover:bg-white transition" id="btn-sumbit-phone">مشترک شوید</button>
+                    <input class="text-sm px-4 py-1 placeholder:text-sm outline-none focus:border-#D9D9D9 rounded-lg shadow-lg" type="text" spellcheck="false" id="input-phone" placeholder="شماره تلفن همراه">
+                    <button class="text-sm whitespace-nowrap bg-#353535 text-white px-4 py-1 rounded-md shadow-lg hover:text-#353535 hover:bg-white transition" id="btn-sumbit-phone">مشترک شوید</button>
                 </div>
             </div>
             <div class="min-w-36 flex flex-col gap-y-2">
                 <h6>شبکه های اجتماعی</h6>
-                <div id="insta" class="flex items-center gap-x-1 text-gray-900/70">
+                <div id="insta" class="flex items-center gap-x-1 text-#353535">
                     <i class='bx bxl-instagram-alt text-lg'></i>
-                    <a style="font-family: 'Poppins';" class="text-sm" href="#">https://www.instagram.com/</a>
+                    <a class="text-sm" href="#">https://www.instagram.com/</a>
                 </div>
-                <div id="tel" class="flex items-center gap-x-1 text-gray-900/70">
+                <div id="tel" class="flex items-center gap-x-1 text-#353535">
                     <i class='bx bxl-telegram text-lg'></i>
-                    <a style="font-family: 'Poppins';" class="text-sm" href="#">https://t.me/</a>
+                    <a class="text-sm" href="#">https://t.me/</a>
                 </div>
             </div>
         </div>
@@ -165,7 +166,7 @@
     </footer>
 
     <script src="../js/buy_website.js"></script>
-    <script src="../js/footer.js"></script>
     <script src="../js/navbar.js"></script>
+    <script src="../js/footer.js"></script>
 </body>
 </html>

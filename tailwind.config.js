@@ -2,8 +2,7 @@
 module.exports = {
   content: [
     "./src/pages/*.html",
-    "./src/js/*.js",
-    "./src/fonts/*.*"
+    "./src/js/*.js"
   ],
   theme: {
     fontFamily: {
@@ -11,6 +10,7 @@ module.exports = {
     },
     extend: {
       inset: {
+        '18': '4.5rem',
         '26' : '104px',
         '1/8': '12.5%',
         '75': '300px'
@@ -19,6 +19,7 @@ module.exports = {
         '29': '116px'
       },
       spacing: {
+        '54': '13.5rem',
         '88': '22rem',
         '100': '25rem',
         '120': '30rem',
@@ -36,7 +37,13 @@ module.exports = {
         '#284B63': '#284B63' //  blue
       },
       borderRadius: {
-        '5xl': '5rem'
+        '4xl': '2rem',
+        '5xl': '2.5rem',
+        '6xl': '3rem',
+        'nxl': '6rem'
+      },
+      fontSize: {
+        '2xs': '.6rem'
       }
     },
   },
