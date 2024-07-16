@@ -1,9 +1,0 @@
-dark mode
-home: samples :: done
-home: purpose :: done
-home: weblogs :: done
-home: team :: done
-home: why to trust :: done
-
-team: lg size call us :: done
-team: feebacks

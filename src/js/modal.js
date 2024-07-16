@@ -23,13 +23,11 @@ window.onload = function () {
         modal.classList.remove('-top-75')
         modal.classList.add('top-1/2')
         document.body.classList.add('modal-active')
-        modal.classList.add('backdrop-blur-lg')
     }
     function closeModal () {
         modal.classList.remove('top-1/2')
         modal.classList.add('-top-75')
         document.body.classList.remove('modal-active')
-        modal.classList.remove('backdrop-blur-lg')
     }
     
     btnOpenModal.addEventListener('click', openModal)
