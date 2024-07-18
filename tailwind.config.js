@@ -48,6 +48,21 @@ module.exports = {
       screens: {
         '2xs': '375px',
         'xs': '460px'
+      },
+      animation: {
+        fade: 'fade 300ms ease-in-out'
+      },
+      keyframes: {
+        fade: {
+          '0%': {
+              opacity: 0,
+              transform: 'scale(1.5,1.5)'
+          },
+          '100%': {
+              opacity: 1,
+              transform: 'scale(1)'
+          }
+        }
       }
     },
   },
