@@ -547,8 +547,8 @@
     </footer>
 
     <!-- modal -->
-    <div id="modal" class="w-4/5 sm:3/4 md:w-2/3 lg:w-1/2 bg-gray-300 shadow-xl rounded-xl flex flex-col gap-4 absolute -top-75 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-40 transition-all duration-700 p-5">
-        <div class="modal-container">
+    <div id="modal" class="fixed w-screen h-screen bg-transparent -top-1000 flex items-center justify-center transition-all duration-500 backdrop-blur-lg">
+        <div class="w-4/5 sm:w-3/4 md:w-2/3 lg:w-1/2 h-auto bg-#D9D9D9 rounded-xl shadow-xl flex flex-col gap-4 p-5">
             <div class="flex items-center justify-between px-4">
                 <h5 class="font-lg mt-2 mb-1">مرتب سازی بر اساس</h5>
                 <span class="material-symbols-outlined cursor-pointer" id="close-modal">close</span>
@@ -561,9 +561,8 @@
         </div>
     </div>
 
-    <script src="../js/modal.js"></script>
+    <script src="../js/weblog.js"></script>
     <script src="../js/navbar.js"></script>
     <script src="../js/footer.js"></script>
-    <script src="../js/show-more.js"></script>
 </body>
 </html>
