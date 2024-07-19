@@ -41,9 +41,9 @@
     </nav>
 
     <!-- slider -->
-    <section class="h-100 md:h-150 lg:h-200 xl:h-screen">
-        <div class="relative">
-            <div>
+    <section class="relative h-100 md:h-150 lg:h-200 xl:h-screen">
+        <div class="relative w-full h-full">
+            <div class="w-full h-full">
                 <img class="animate-fade w-full h-full object-cover" src="../img/slider-1.jpg" alt="slider-image">
             </div>
             <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-10">
@@ -51,17 +51,17 @@
                 <h2 class="text-white text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-extrabold text-nowrap">We Put So Much Work In <br> Products and Websites</h2>
                 <a id="slider-link" class="inline-block py-1.5 px-6 rounded-xl text-#353535 bg-white mt-6 hover:bg-#3C6E71 hover:text-white transition duration-150" href="team.html">تیم ما</a>
             </div>        
-            <div id="btn-next" class="cursor-pointer hover:bg-#D9D9D9 hover:text-#353535 transition-all absolute right-0 top-1/2 flex items-center  p-3 bg-#353535 text-#D9D9D9 bg-opacity-50 mx-2 rounded-full shadow-lg">
-                <span class="material-symbols-outlined text-2xl lg:text-3xl xl:text-4xl">arrow_forward_ios</span>
-            </div>
-            <div id="btn-prev" class="cursor-pointer hover:bg-#D9D9D9 hover:text-#353535 transition-all absolute left-0 top-1/2 flex items-center py-3 pl-4 pr-2 bg-#353535 text-#D9D9D9 bg-opacity-50 mx-2 rounded-full shadow-lg">
-                <span class="material-symbols-outlined text-2xl lg:text-3xl xl:text-4xl">arrow_back_ios</span>
-            </div>
+        </div>
+        <div id="btn-next" class="cursor-pointer hover:bg-#D9D9D9 hover:text-#353535 transition-all absolute right-0 top-1/2 flex items-center  p-3 bg-#353535 text-#D9D9D9 bg-opacity-50 mx-2 rounded-full shadow-lg">
+            <span class="material-symbols-outlined text-2xl lg:text-3xl xl:text-4xl">arrow_forward_ios</span>
+        </div>
+        <div id="btn-prev" class="cursor-pointer hover:bg-#D9D9D9 hover:text-#353535 transition-all absolute left-0 top-1/2 flex items-center py-3 pl-4 pr-2 bg-#353535 text-#D9D9D9 bg-opacity-50 mx-2 rounded-full shadow-lg">
+            <span class="material-symbols-outlined text-2xl lg:text-3xl xl:text-4xl">arrow_back_ios</span>
         </div>
     </section>
 
     <!-- stats -->
-    <section class="my-10 lg:mt-32 xl:mt-40">
+    <section class="my-10">
         <div class="flex flex-wrap items-center shadow-lg  overflow-hidden">
             <div class="border-1 border-#3C6E71 flex items-center justify-center bg-gradient-to-b from-#3C6E71 to-#284B63 text-white basis-full 2xs:basis-1/2 xs:basis-1/4 h-40 sm:h-48 md:h-54 lg:h-64">
                 <ul class="flex flex-col items-center justify-center text-center gap-1">
@@ -99,88 +99,171 @@
         <section id="header-sample" class="flex justify-between py-4 items-center">
             <div class="flex items-center justify-center text-#284B63 gap-2">
                 <span class="material-symbols-outlined">check_box_outline_blank</span>
-                <h4 class="text-2xl tracking-tighter">نمونه کار ها</h4>
+                <h4 class="text-2xl tracking-tighter">نمونه کارها</h4>
             </div>
             <div class="flex items-center justify-center text-#3C6E71 gap-1">
                 <a href="#" class="text-lg">مشاهده همه</a>
                 <span class="material-symbols-outlined">arrow_back</span>
             </div>
         </section>
-        <main id="samples" class="w-full h-72 overflow-y-hidden overflow-x-scroll bg-#D9D9D9 flex items-center gap-x-4 rounded-md p-2">
-            <div class="shadow-lg w-60 h-52">
-                <div class="w-60 h-40">
+        <main id="samples" class="w-full max-h-200 overflow-y-hidden overflow-x-scroll bg-#D9D9D9 flex items-center gap-x-4 rounded-md p-2">
+            <div class="h-104 min-w-64 bg-white shadow-xl my-4 mx-4 rounded-xl flex flex-col items-center">
+                <div class="w-full h-5/12 rounded-t-lg">
                     <img class="w-full h-full rounded-t-lg" src="../img/sample.png" alt="sample">
                 </div>
-                <div class="bg-gradient-to-r from-#3C6E71 to-#284B63 w-full h-12 rounded-b-lg text-white text-lg flex items-center justify-center">
-                    <a href="#" class="flex items-center justify-center gap-1">
-                        <span>مشاهده کار</span>
-                        <span class="material-symbols-outlined text-#D9D9D9 rounded-full p-1 hover:bg-#D9D9D9 hover:text-#3C6E71 transition">arrow_back</span>
+                <div class="flex flex-col items-center text-center px-2 tracking-tighter mb-2 pb-2 border-b-1 border-#D9D9D9">
+                    <h4 class="text-lg text-#284B63 font-semibold">نام سایت</h4>
+                    <p class="text-sm text-#3C6E71">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+                </div>
+                <div class="w-full flex flex-col gap-1 items-center text-2xs text-#3C6E71 tracking-tighter pb-2">
+                    <span class="text-xs block text-center">برنامه نویسان <br>
+                        مانی صفرزاده، رادمان منتظر، محمدرضا فاضلی</span>
+                    <span class="text-xs block text-center">تاریخ اتمام پروژه: 1/1/1400</span>
+                </div>
+                <div class="flex items-center justify-center text-white w-full bg-gradient-to-br from-#3C6E71 to-#284B63 cursor-pointer flex-grow rounded-b-lg border-1 border-#284B63">
+                    <a href="#" class="flex items-center justify-center gap-2 bg-inherit hover:bg-white hover:text-#284B63 transition-all w-full h-full py-3 px-2 rounded-b-lg">
+                        <span class=>مشاهده وبسایت</span>
+                        <span class="material-symbols-outlined">arrow_left_alt</span>
                     </a>
                 </div>
             </div>
-            <div class="shadow-lg w-60 h-52">
-                <div class="w-60 h-40">
+            <div class="h-104 min-w-64 bg-white shadow-xl my-4 mx-4 rounded-xl flex flex-col items-center">
+                <div class="w-full h-5/12 rounded-t-lg">
                     <img class="w-full h-full rounded-t-lg" src="../img/sample.png" alt="sample">
                 </div>
-                <div class="bg-gradient-to-r from-#3C6E71 to-#284B63 w-full h-12 rounded-b-lg text-white text-lg flex items-center justify-center">
-                    <a href="#" class="flex items-center justify-center gap-1">
-                        <span>مشاهده کار</span>
-                        <span class="material-symbols-outlined text-#D9D9D9 rounded-full p-1 hover:bg-#D9D9D9 hover:text-#3C6E71 transition">arrow_back</span>
+                <div class="flex flex-col items-center text-center px-2 tracking-tighter mb-2 pb-2 border-b-1 border-#D9D9D9">
+                    <h4 class="text-lg text-#284B63 font-semibold">نام سایت</h4>
+                    <p class="text-sm text-#3C6E71">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+                </div>
+                <div class="w-full flex flex-col gap-1 items-center text-2xs text-#3C6E71 tracking-tighter pb-2">
+                    <span class="text-xs block text-center">برنامه نویسان <br>
+                        مانی صفرزاده، رادمان منتظر، محمدرضا فاضلی</span>
+                    <span class="text-xs block text-center">تاریخ اتمام پروژه: 1/1/1400</span>
+                </div>
+                <div class="flex items-center justify-center text-white w-full bg-gradient-to-br from-#3C6E71 to-#284B63 cursor-pointer flex-grow rounded-b-lg border-1 border-#284B63">
+                    <a href="#" class="flex items-center justify-center gap-2 bg-inherit hover:bg-white hover:text-#284B63 transition-all w-full h-full py-3 px-2 rounded-b-lg">
+                        <span class=>مشاهده وبسایت</span>
+                        <span class="material-symbols-outlined">arrow_left_alt</span>
                     </a>
                 </div>
             </div>
-            <div class="shadow-lg w-60 h-52">
-                <div class="w-60 h-40">
+            <div class="h-104 min-w-64 bg-white shadow-xl my-4 mx-4 rounded-xl flex flex-col items-center">
+                <div class="w-full h-5/12 rounded-t-lg">
                     <img class="w-full h-full rounded-t-lg" src="../img/sample.png" alt="sample">
                 </div>
-                <div class="bg-gradient-to-r from-#3C6E71 to-#284B63 w-full h-12 rounded-b-lg text-white text-lg flex items-center justify-center">
-                    <a href="#" class="flex items-center justify-center gap-1">
-                        <span>مشاهده کار</span>
-                        <span class="material-symbols-outlined text-#D9D9D9 rounded-full p-1 hover:bg-#D9D9D9 hover:text-#3C6E71 transition">arrow_back</span>
+                <div class="flex flex-col items-center text-center px-2 tracking-tighter mb-2 pb-2 border-b-1 border-#D9D9D9">
+                    <h4 class="text-lg text-#284B63 font-semibold">نام سایت</h4>
+                    <p class="text-sm text-#3C6E71">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+                </div>
+                <div class="w-full flex flex-col gap-1 items-center text-2xs text-#3C6E71 tracking-tighter pb-2">
+                    <span class="text-xs block text-center">برنامه نویسان <br>
+                        مانی صفرزاده، رادمان منتظر، محمدرضا فاضلی</span>
+                    <span class="text-xs block text-center">تاریخ اتمام پروژه: 1/1/1400</span>
+                </div>
+                <div class="flex items-center justify-center text-white w-full bg-gradient-to-br from-#3C6E71 to-#284B63 cursor-pointer flex-grow rounded-b-lg border-1 border-#284B63">
+                    <a href="#" class="flex items-center justify-center gap-2 bg-inherit hover:bg-white hover:text-#284B63 transition-all w-full h-full py-3 px-2 rounded-b-lg">
+                        <span class=>مشاهده وبسایت</span>
+                        <span class="material-symbols-outlined">arrow_left_alt</span>
                     </a>
                 </div>
             </div>
-            <div class="shadow-lg w-60 h-52">
-                <div class="w-60 h-40">
+            <div class="h-104 min-w-64 bg-white shadow-xl my-4 mx-4 rounded-xl flex flex-col items-center">
+                <div class="w-full h-5/12 rounded-t-lg">
                     <img class="w-full h-full rounded-t-lg" src="../img/sample.png" alt="sample">
                 </div>
-                <div class="bg-gradient-to-r from-#3C6E71 to-#284B63 w-full h-12 rounded-b-lg text-white text-lg flex items-center justify-center">
-                    <a href="#" class="flex items-center justify-center gap-1">
-                        <span>مشاهده کار</span>
-                        <span class="material-symbols-outlined text-#D9D9D9 rounded-full p-1 hover:bg-#D9D9D9 hover:text-#3C6E71 transition">arrow_back</span>
+                <div class="flex flex-col items-center text-center px-2 tracking-tighter mb-2 pb-2 border-b-1 border-#D9D9D9">
+                    <h4 class="text-lg text-#284B63 font-semibold">نام سایت</h4>
+                    <p class="text-sm text-#3C6E71">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+                </div>
+                <div class="w-full flex flex-col gap-1 items-center text-2xs text-#3C6E71 tracking-tighter pb-2">
+                    <span class="text-xs block text-center">برنامه نویسان <br>
+                        مانی صفرزاده، رادمان منتظر، محمدرضا فاضلی</span>
+                    <span class="text-xs block text-center">تاریخ اتمام پروژه: 1/1/1400</span>
+                </div>
+                <div class="flex items-center justify-center text-white w-full bg-gradient-to-br from-#3C6E71 to-#284B63 cursor-pointer flex-grow rounded-b-lg border-1 border-#284B63">
+                    <a href="#" class="flex items-center justify-center gap-2 bg-inherit hover:bg-white hover:text-#284B63 transition-all w-full h-full py-3 px-2 rounded-b-lg">
+                        <span class=>مشاهده وبسایت</span>
+                        <span class="material-symbols-outlined">arrow_left_alt</span>
                     </a>
                 </div>
             </div>
-            <div class="shadow-lg w-60 h-52">
-                <div class="w-60 h-40">
+            <div class="h-104 min-w-64 bg-white shadow-xl my-4 mx-4 rounded-xl flex flex-col items-center">
+                <div class="w-full h-5/12 rounded-t-lg">
                     <img class="w-full h-full rounded-t-lg" src="../img/sample.png" alt="sample">
                 </div>
-                <div class="bg-gradient-to-r from-#3C6E71 to-#284B63 w-full h-12 rounded-b-lg text-white text-lg flex items-center justify-center">
-                    <a href="#" class="flex items-center justify-center gap-1">
-                        <span>مشاهده کار</span>
-                        <span class="material-symbols-outlined text-#D9D9D9 rounded-full p-1 hover:bg-#D9D9D9 hover:text-#3C6E71 transition">arrow_back</span>
+                <div class="flex flex-col items-center text-center px-2 tracking-tighter mb-2 pb-2 border-b-1 border-#D9D9D9">
+                    <h4 class="text-lg text-#284B63 font-semibold">نام سایت</h4>
+                    <p class="text-sm text-#3C6E71">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+                </div>
+                <div class="w-full flex flex-col gap-1 items-center text-2xs text-#3C6E71 tracking-tighter pb-2">
+                    <span class="text-xs block text-center">برنامه نویسان <br>
+                        مانی صفرزاده، رادمان منتظر، محمدرضا فاضلی</span>
+                    <span class="text-xs block text-center">تاریخ اتمام پروژه: 1/1/1400</span>
+                </div>
+                <div class="flex items-center justify-center text-white w-full bg-gradient-to-br from-#3C6E71 to-#284B63 cursor-pointer flex-grow rounded-b-lg border-1 border-#284B63">
+                    <a href="#" class="flex items-center justify-center gap-2 bg-inherit hover:bg-white hover:text-#284B63 transition-all w-full h-full py-3 px-2 rounded-b-lg">
+                        <span class=>مشاهده وبسایت</span>
+                        <span class="material-symbols-outlined">arrow_left_alt</span>
                     </a>
                 </div>
             </div>
-            <div class="shadow-lg w-60 h-52">
-                <div class="w-60 h-40">
+            <div class="h-104 min-w-64 bg-white shadow-xl my-4 mx-4 rounded-xl flex flex-col items-center">
+                <div class="w-full h-5/12 rounded-t-lg">
                     <img class="w-full h-full rounded-t-lg" src="../img/sample.png" alt="sample">
                 </div>
-                <div class="bg-gradient-to-r from-#3C6E71 to-#284B63 w-full h-12 rounded-b-lg text-white text-lg flex items-center justify-center">
-                    <a href="#" class="flex items-center justify-center gap-1">
-                        <span>مشاهده کار</span>
-                        <span class="material-symbols-outlined text-#D9D9D9 rounded-full p-1 hover:bg-#D9D9D9 hover:text-#3C6E71 transition">arrow_back</span>
+                <div class="flex flex-col items-center text-center px-2 tracking-tighter mb-2 pb-2 border-b-1 border-#D9D9D9">
+                    <h4 class="text-lg text-#284B63 font-semibold">نام سایت</h4>
+                    <p class="text-sm text-#3C6E71">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+                </div>
+                <div class="w-full flex flex-col gap-1 items-center text-2xs text-#3C6E71 tracking-tighter pb-2">
+                    <span class="text-xs block text-center">برنامه نویسان <br>
+                        مانی صفرزاده، رادمان منتظر، محمدرضا فاضلی</span>
+                    <span class="text-xs block text-center">تاریخ اتمام پروژه: 1/1/1400</span>
+                </div>
+                <div class="flex items-center justify-center text-white w-full bg-gradient-to-br from-#3C6E71 to-#284B63 cursor-pointer flex-grow rounded-b-lg border-1 border-#284B63">
+                    <a href="#" class="flex items-center justify-center gap-2 bg-inherit hover:bg-white hover:text-#284B63 transition-all w-full h-full py-3 px-2 rounded-b-lg">
+                        <span class=>مشاهده وبسایت</span>
+                        <span class="material-symbols-outlined">arrow_left_alt</span>
                     </a>
                 </div>
             </div>
-            <div class="shadow-lg w-60 h-52">
-                <div class="w-60 h-40">
+            <div class="h-104 min-w-64 bg-white shadow-xl my-4 mx-4 rounded-xl flex flex-col items-center">
+                <div class="w-full h-5/12 rounded-t-lg">
                     <img class="w-full h-full rounded-t-lg" src="../img/sample.png" alt="sample">
                 </div>
-                <div class="bg-gradient-to-r from-#3C6E71 to-#284B63 w-full h-12 rounded-b-lg text-white text-lg flex items-center justify-center">
-                    <a href="#" class="flex items-center justify-center gap-1">
-                        <span>مشاهده کار</span>
-                        <span class="material-symbols-outlined text-#D9D9D9 rounded-full p-1 hover:bg-#D9D9D9 hover:text-#3C6E71 transition">arrow_back</span>
+                <div class="flex flex-col items-center text-center px-2 tracking-tighter mb-2 pb-2 border-b-1 border-#D9D9D9">
+                    <h4 class="text-lg text-#284B63 font-semibold">نام سایت</h4>
+                    <p class="text-sm text-#3C6E71">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+                </div>
+                <div class="w-full flex flex-col gap-1 items-center text-2xs text-#3C6E71 tracking-tighter pb-2">
+                    <span class="text-xs block text-center">برنامه نویسان <br>
+                        مانی صفرزاده، رادمان منتظر، محمدرضا فاضلی</span>
+                    <span class="text-xs block text-center">تاریخ اتمام پروژه: 1/1/1400</span>
+                </div>
+                <div class="flex items-center justify-center text-white w-full bg-gradient-to-br from-#3C6E71 to-#284B63 cursor-pointer flex-grow rounded-b-lg border-1 border-#284B63">
+                    <a href="#" class="flex items-center justify-center gap-2 bg-inherit hover:bg-white hover:text-#284B63 transition-all w-full h-full py-3 px-2 rounded-b-lg">
+                        <span class=>مشاهده وبسایت</span>
+                        <span class="material-symbols-outlined">arrow_left_alt</span>
+                    </a>
+                </div>
+            </div>
+            <div class="h-104 min-w-64 bg-white shadow-xl my-4 mx-4 rounded-xl flex flex-col items-center">
+                <div class="w-full h-5/12 rounded-t-lg">
+                    <img class="w-full h-full rounded-t-lg" src="../img/sample.png" alt="sample">
+                </div>
+                <div class="flex flex-col items-center text-center px-2 tracking-tighter mb-2 pb-2 border-b-1 border-#D9D9D9">
+                    <h4 class="text-lg text-#284B63 font-semibold">نام سایت</h4>
+                    <p class="text-sm text-#3C6E71">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+                </div>
+                <div class="w-full flex flex-col gap-1 items-center text-2xs text-#3C6E71 tracking-tighter pb-2">
+                    <span class="text-xs block text-center">برنامه نویسان <br>
+                        مانی صفرزاده، رادمان منتظر، محمدرضا فاضلی</span>
+                    <span class="text-xs block text-center">تاریخ اتمام پروژه: 1/1/1400</span>
+                </div>
+                <div class="flex items-center justify-center text-white w-full bg-gradient-to-br from-#3C6E71 to-#284B63 cursor-pointer flex-grow rounded-b-lg border-1 border-#284B63">
+                    <a href="#" class="flex items-center justify-center gap-2 bg-inherit hover:bg-white hover:text-#284B63 transition-all w-full h-full py-3 px-2 rounded-b-lg">
+                        <span class=>مشاهده وبسایت</span>
+                        <span class="material-symbols-outlined">arrow_left_alt</span>
                     </a>
                 </div>
             </div>
@@ -193,21 +276,21 @@
             <h4 class="text-xl text-#3C6E71 font-bold md:text-3xl">هدف ما</h4>
         </div>
         <dvi class="wrapper flex flex-wrap items-center justify-evenly w-full gap-6">
-            <div class="flex flex-col items-center justify-center gap-4 text-center text-white px-6 py-3 rounded-md shadow-lg bg-gradient-to-l from-red-600 to-orange-500 w-4/5 2xs:w-5/12 md:min-h-24 lg:min-h-32 min-h-20">
+            <div class="flex flex-col items-center justify-center gap-4 text-center text-white px-6 py-3 rounded-md shadow-lg bg-gradient-to-l from-red-600 via-orange-600 to-amber-600 w-4/5 2xs:w-5/12 md:min-h-24 lg:min-h-32 min-h-20">
                 <h6 class="text-lg font-semibold lg:text-xl xl:text-2xl">لورم اپیسوم</h6>
-                <p class="tracking-tighter lg:text-lg xl:text-xl">لورم اپیسوم با متن ساختگی و ساختار ساده و</p>
+                <p class="tracking-tighter lg:text-lg xl:text-xl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
             </div>
-            <div class="flex flex-col items-center justify-center gap-4 text-center text-white px-6 py-3 rounded-md shadow-lg bg-gradient-to-l from-indigo-600 to-purple-600 w-4/5 2xs:w-5/12 md:min-h-24 lg:min-h-32 min-h-20">
+            <div class="flex flex-col items-center justify-center gap-4 text-center text-white px-6 py-3 rounded-md shadow-lg bg-gradient-to-l from-indigo-600 via-blue-500 to-purple-600 w-4/5 2xs:w-5/12 md:min-h-24 lg:min-h-32 min-h-20">
                 <h6 class="text-lg font-semibold lg:text-xl xl:text-2xl">لورم اپیسوم</h6>
-                <p class="tracking-tighter lg:text-lg xl:text-xl">لورم اپیسوم با متن ساختگی و ساختار ساده و</p>
+                <p class="tracking-tighter lg:text-lg xl:text-xl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
             </div>
-            <div class="flex flex-col items-center justify-center gap-4 text-center text-white px-6 py-3 rounded-md shadow-lg bg-gradient-to-l from-green-600 to-yellow-500 w-4/5 2xs:w-5/12 md:min-h-24 lg:min-h-32 min-h-20">
+            <div class="flex flex-col items-center justify-center gap-4 text-center text-white px-6 py-3 rounded-md shadow-lg bg-gradient-to-l from-green-600 via-lime-600 to-yellow-500 w-4/5 2xs:w-5/12 md:min-h-24 lg:min-h-32 min-h-20">
                 <h6 class="text-lg font-semibold lg:text-xl xl:text-2xl">لورم اپیسوم</h6>
-                <p class="tracking-tighter lg:text-lg xl:text-xl">لورم اپیسوم با متن ساختگی و ساختار ساده و</p>
+                <p class="tracking-tighter lg:text-lg xl:text-xl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
             </div>
             <div class="flex flex-col items-center justify-center gap-4 text-center text-white px-6 py-3 rounded-md shadow-lg bg-gradient-to-l from-#3C6E71 to-#284B63 w-4/5 2xs:w-5/12 md:min-h-24 lg:min-h-32 min-h-20">
                 <h6 class="text-lg font-semibold lg:text-xl xl:text-2xl">لورم اپیسوم</h6>
-                <p class="tracking-tighter lg:text-lg xl:text-xl">لورم اپیسوم با متن ساختگی و ساختار ساده و</p>
+                <p class="tracking-tighter lg:text-lg xl:text-xl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
             </div>
         </dvi>
     </section>
@@ -510,7 +593,7 @@
     </section>
 
     <!-- section our team -->
-    <section class="my-12 bg-white flex flex-col">
+    <section class="my-12 bg-white flex flex-col px-4 pb-12">
         <section class="flex justify-between p-4 items-center">
             <div class="flex items-center gap-1 text-#284B63">
                 <span class="material-symbols-outlined">check_box_outline_blank</span>
@@ -521,7 +604,7 @@
                 <span class="material-symbols-outlined">arrow_back</span>
             </div>
         </section>
-        <main class="w-full h-120 overflow-y-hidden overflow-x-scroll bg-#D9D9D9 flex items-center gap-x-4 rounded-md p-2 mb-12">
+        <main class="w-full h-auto bg-#D9D9D9 flex flex-wrap items-center justify-evenly rounded-md p-12 gap-16 lg:gap-8">
             <div class="flex flex-col items-center relative">
                 <div class="head flex items-center justify-around bg-gradient-to-r from-#3C6E71 to-#284B63 w-52 h-20 shadow-lg rounded-lg rounded-br-4xl absolute -top-8">
                     <div class="image flex items-center justify-center w-16 h-16 shadow-lg rounded-full">
@@ -556,7 +639,7 @@
                     </div>
                 </div>
                 <div class="body flex flex-col items-center text-center justify-center p-1 bg-white h-72 w-56 rounded-b-nxl rounded-t-3xl">
-                    <h5 class="tracking-tighter text-#284B63 text-lg mb-2">برنامه نویس بک اند</h5>
+                    <h5 class="tracking-tighter text-#284B63 text-lg mb-2">برنامه نویس فرانت اند</h5>
                     <p class="tracking-tighter text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز </p>
                 </div>
                 <div class="social-media relative flex items-center justify-center">
@@ -574,219 +657,12 @@
                         <img class="w-full h-full rounded-full" src="../img/radman.jpg" alt="profile">
                     </div>
                     <div class="flex flex-col items-center">
-                        <h4 class="text-lg font-semibold text-#D9D9D9">رادمان منتظر</h4>
+                        <h4 class="text-lg font-semibold text-#D9D9D9">محمدرضا فاضلی</h4>
                         <a class="text-2xs text-white">radman.cod110@gmail.com</a>
                     </div>
                 </div>
                 <div class="body flex flex-col items-center text-center justify-center p-1 bg-white h-72 w-56 rounded-b-nxl rounded-t-3xl">
-                    <h5 class="tracking-tighter text-#284B63 text-lg mb-2">برنامه نویس بک اند</h5>
-                    <p class="tracking-tighter text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز </p>
-                </div>
-                <div class="social-media relative flex items-center justify-center">
-                    <div class="absolute -top-8 flex items-center justify-center bg-gradient-to-r from-#3C6E71 to-#284B63 text-#D9D9D9 w-36 gap-1 rounded-b-lg p-2">
-                        <i class='bx bxl-telegram text-lg hover:bg-#D9D9D9 rounded-lg hover:text-#3C6E71 hover:transition transition duration-200 px-1'></i>
-                        <i class='bx bxl-linkedin-square text-lg hover:bg-#D9D9D9 rounded-lg hover:text-#3C6E71 hover:transition transition duration-200 px-1'></i>
-                        <i class='bx bxl-github text-lg hover:bg-#D9D9D9 rounded-lg hover:text-#3C6E71 hover:transition transition duration-200 px-1'></i>
-                        <i class='bx bxl-instagram-alt text-lg hover:bg-#D9D9D9 rounded-lg hover:text-#3C6E71 hover:transition transition duration-200 px-1'></i>
-                    </div>
-                </div>
-            </div>
-            <div class="flex flex-col items-center relative">
-                <div class="head flex items-center justify-around bg-gradient-to-r from-#3C6E71 to-#284B63 w-52 h-20 shadow-lg rounded-lg rounded-br-4xl absolute -top-8">
-                    <div class="image flex items-center justify-center w-16 h-16 shadow-lg rounded-full">
-                        <img class="w-full h-full rounded-full" src="../img/mani.jpg" alt="profile">
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <h4 class="text-lg font-semibold text-#D9D9D9">مانی صفرزاده</h4>
-                        <a class="text-2xs text-white">safarzdeh.mani87@gmail.com</a>
-                    </div>
-                </div>
-                <div class="body flex flex-col items-center text-center justify-center p-1 bg-white h-72 w-56 rounded-b-nxl rounded-t-3xl">
-                    <h5 class="tracking-tighter text-#284B63 text-lg mb-2">برنامه نویس بک اند</h5>
-                    <p class="tracking-tighter text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز </p>
-                </div>
-                <div class="social-media relative flex items-center justify-center">
-                    <div class="absolute -top-8 flex items-center justify-center bg-gradient-to-r from-#3C6E71 to-#284B63 text-#D9D9D9 w-36 gap-1 rounded-b-lg p-2">
-                        <i class='bx bxl-telegram text-lg hover:bg-#D9D9D9 rounded-lg hover:text-#3C6E71 hover:transition transition duration-200 px-1'></i>
-                        <i class='bx bxl-linkedin-square text-lg hover:bg-#D9D9D9 rounded-lg hover:text-#3C6E71 hover:transition transition duration-200 px-1'></i>
-                        <i class='bx bxl-github text-lg hover:bg-#D9D9D9 rounded-lg hover:text-#3C6E71 hover:transition transition duration-200 px-1'></i>
-                        <i class='bx bxl-instagram-alt text-lg hover:bg-#D9D9D9 rounded-lg hover:text-#3C6E71 hover:transition transition duration-200 px-1'></i>
-                    </div>
-                </div>
-            </div>
-            <div class="flex flex-col items-center relative">
-                <div class="head flex items-center justify-around bg-gradient-to-r from-#3C6E71 to-#284B63 w-52 h-20 shadow-lg rounded-lg rounded-br-4xl absolute -top-8">
-                    <div class="image flex items-center justify-center w-16 h-16 shadow-lg rounded-full">
-                        <img class="w-full h-full rounded-full" src="../img/radman.jpg" alt="profile">
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <h4 class="text-lg font-semibold text-#D9D9D9">رادمان منتظر</h4>
-                        <a class="text-2xs text-white">radman.cod110@gmail.com</a>
-                    </div>
-                </div>
-                <div class="body flex flex-col items-center text-center justify-center p-1 bg-white h-72 w-56 rounded-b-nxl rounded-t-3xl">
-                    <h5 class="tracking-tighter text-#284B63 text-lg mb-2">برنامه نویس بک اند</h5>
-                    <p class="tracking-tighter text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز </p>
-                </div>
-                <div class="social-media relative flex items-center justify-center">
-                    <div class="absolute -top-8 flex items-center justify-center bg-gradient-to-r from-#3C6E71 to-#284B63 text-#D9D9D9 w-36 gap-1 rounded-b-lg p-2">
-                        <i class='bx bxl-telegram text-lg hover:bg-#D9D9D9 rounded-lg hover:text-#3C6E71 hover:transition transition duration-200 px-1'></i>
-                        <i class='bx bxl-linkedin-square text-lg hover:bg-#D9D9D9 rounded-lg hover:text-#3C6E71 hover:transition transition duration-200 px-1'></i>
-                        <i class='bx bxl-github text-lg hover:bg-#D9D9D9 rounded-lg hover:text-#3C6E71 hover:transition transition duration-200 px-1'></i>
-                        <i class='bx bxl-instagram-alt text-lg hover:bg-#D9D9D9 rounded-lg hover:text-#3C6E71 hover:transition transition duration-200 px-1'></i>
-                    </div>
-                </div>
-            </div>
-            <div class="flex flex-col items-center relative">
-                <div class="head flex items-center justify-around bg-gradient-to-r from-#3C6E71 to-#284B63 w-52 h-20 shadow-lg rounded-lg rounded-br-4xl absolute -top-8">
-                    <div class="image flex items-center justify-center w-16 h-16 shadow-lg rounded-full">
-                        <img class="w-full h-full rounded-full" src="../img/mani.jpg" alt="profile">
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <h4 class="text-lg font-semibold text-#D9D9D9">مانی صفرزاده</h4>
-                        <a class="text-2xs text-white">safarzdeh.mani87@gmail.com</a>
-                    </div>
-                </div>
-                <div class="body flex flex-col items-center text-center justify-center p-1 bg-white h-72 w-56 rounded-b-nxl rounded-t-3xl">
-                    <h5 class="tracking-tighter text-#284B63 text-lg mb-2">برنامه نویس بک اند</h5>
-                    <p class="tracking-tighter text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز </p>
-                </div>
-                <div class="social-media relative flex items-center justify-center">
-                    <div class="absolute -top-8 flex items-center justify-center bg-gradient-to-r from-#3C6E71 to-#284B63 text-#D9D9D9 w-36 gap-1 rounded-b-lg p-2">
-                        <i class='bx bxl-telegram text-lg hover:bg-#D9D9D9 rounded-lg hover:text-#3C6E71 hover:transition transition duration-200 px-1'></i>
-                        <i class='bx bxl-linkedin-square text-lg hover:bg-#D9D9D9 rounded-lg hover:text-#3C6E71 hover:transition transition duration-200 px-1'></i>
-                        <i class='bx bxl-github text-lg hover:bg-#D9D9D9 rounded-lg hover:text-#3C6E71 hover:transition transition duration-200 px-1'></i>
-                        <i class='bx bxl-instagram-alt text-lg hover:bg-#D9D9D9 rounded-lg hover:text-#3C6E71 hover:transition transition duration-200 px-1'></i>
-                    </div>
-                </div>
-            </div>
-            <div class="flex flex-col items-center relative">
-                <div class="head flex items-center justify-around bg-gradient-to-r from-#3C6E71 to-#284B63 w-52 h-20 shadow-lg rounded-lg rounded-br-4xl absolute -top-8">
-                    <div class="image flex items-center justify-center w-16 h-16 shadow-lg rounded-full">
-                        <img class="w-full h-full rounded-full" src="../img/radman.jpg" alt="profile">
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <h4 class="text-lg font-semibold text-#D9D9D9">رادمان منتظر</h4>
-                        <a class="text-2xs text-white">radman.cod110@gmail.com</a>
-                    </div>
-                </div>
-                <div class="body flex flex-col items-center text-center justify-center p-1 bg-white h-72 w-56 rounded-b-nxl rounded-t-3xl">
-                    <h5 class="tracking-tighter text-#284B63 text-lg mb-2">برنامه نویس بک اند</h5>
-                    <p class="tracking-tighter text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز </p>
-                </div>
-                <div class="social-media relative flex items-center justify-center">
-                    <div class="absolute -top-8 flex items-center justify-center bg-gradient-to-r from-#3C6E71 to-#284B63 text-#D9D9D9 w-36 gap-1 rounded-b-lg p-2">
-                        <i class='bx bxl-telegram text-lg hover:bg-#D9D9D9 rounded-lg hover:text-#3C6E71 hover:transition transition duration-200 px-1'></i>
-                        <i class='bx bxl-linkedin-square text-lg hover:bg-#D9D9D9 rounded-lg hover:text-#3C6E71 hover:transition transition duration-200 px-1'></i>
-                        <i class='bx bxl-github text-lg hover:bg-#D9D9D9 rounded-lg hover:text-#3C6E71 hover:transition transition duration-200 px-1'></i>
-                        <i class='bx bxl-instagram-alt text-lg hover:bg-#D9D9D9 rounded-lg hover:text-#3C6E71 hover:transition transition duration-200 px-1'></i>
-                    </div>
-                </div>
-            </div>
-            <div class="flex flex-col items-center relative">
-                <div class="head flex items-center justify-around bg-gradient-to-r from-#3C6E71 to-#284B63 w-52 h-20 shadow-lg rounded-lg rounded-br-4xl absolute -top-8">
-                    <div class="image flex items-center justify-center w-16 h-16 shadow-lg rounded-full">
-                        <img class="w-full h-full rounded-full" src="../img/mani.jpg" alt="profile">
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <h4 class="text-lg font-semibold text-#D9D9D9">مانی صفرزاده</h4>
-                        <a class="text-2xs text-white">safarzdeh.mani87@gmail.com</a>
-                    </div>
-                </div>
-                <div class="body flex flex-col items-center text-center justify-center p-1 bg-white h-72 w-56 rounded-b-nxl rounded-t-3xl">
-                    <h5 class="tracking-tighter text-#284B63 text-lg mb-2">برنامه نویس بک اند</h5>
-                    <p class="tracking-tighter text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز </p>
-                </div>
-                <div class="social-media relative flex items-center justify-center">
-                    <div class="absolute -top-8 flex items-center justify-center bg-gradient-to-r from-#3C6E71 to-#284B63 text-#D9D9D9 w-36 gap-1 rounded-b-lg p-2">
-                        <i class='bx bxl-telegram text-lg hover:bg-#D9D9D9 rounded-lg hover:text-#3C6E71 hover:transition transition duration-200 px-1'></i>
-                        <i class='bx bxl-linkedin-square text-lg hover:bg-#D9D9D9 rounded-lg hover:text-#3C6E71 hover:transition transition duration-200 px-1'></i>
-                        <i class='bx bxl-github text-lg hover:bg-#D9D9D9 rounded-lg hover:text-#3C6E71 hover:transition transition duration-200 px-1'></i>
-                        <i class='bx bxl-instagram-alt text-lg hover:bg-#D9D9D9 rounded-lg hover:text-#3C6E71 hover:transition transition duration-200 px-1'></i>
-                    </div>
-                </div>
-            </div>
-            <div class="flex flex-col items-center relative">
-                <div class="head flex items-center justify-around bg-gradient-to-r from-#3C6E71 to-#284B63 w-52 h-20 shadow-lg rounded-lg rounded-br-4xl absolute -top-8">
-                    <div class="image flex items-center justify-center w-16 h-16 shadow-lg rounded-full">
-                        <img class="w-full h-full rounded-full" src="../img/radman.jpg" alt="profile">
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <h4 class="text-lg font-semibold text-#D9D9D9">رادمان منتظر</h4>
-                        <a class="text-2xs text-white">radman.cod110@gmail.com</a>
-                    </div>
-                </div>
-                <div class="body flex flex-col items-center text-center justify-center p-1 bg-white h-72 w-56 rounded-b-nxl rounded-t-3xl">
-                    <h5 class="tracking-tighter text-#284B63 text-lg mb-2">برنامه نویس بک اند</h5>
-                    <p class="tracking-tighter text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز </p>
-                </div>
-                <div class="social-media relative flex items-center justify-center">
-                    <div class="absolute -top-8 flex items-center justify-center bg-gradient-to-r from-#3C6E71 to-#284B63 text-#D9D9D9 w-36 gap-1 rounded-b-lg p-2">
-                        <i class='bx bxl-telegram text-lg hover:bg-#D9D9D9 rounded-lg hover:text-#3C6E71 hover:transition transition duration-200 px-1'></i>
-                        <i class='bx bxl-linkedin-square text-lg hover:bg-#D9D9D9 rounded-lg hover:text-#3C6E71 hover:transition transition duration-200 px-1'></i>
-                        <i class='bx bxl-github text-lg hover:bg-#D9D9D9 rounded-lg hover:text-#3C6E71 hover:transition transition duration-200 px-1'></i>
-                        <i class='bx bxl-instagram-alt text-lg hover:bg-#D9D9D9 rounded-lg hover:text-#3C6E71 hover:transition transition duration-200 px-1'></i>
-                    </div>
-                </div>
-            </div>
-            <div class="flex flex-col items-center relative">
-                <div class="head flex items-center justify-around bg-gradient-to-r from-#3C6E71 to-#284B63 w-52 h-20 shadow-lg rounded-lg rounded-br-4xl absolute -top-8">
-                    <div class="image flex items-center justify-center w-16 h-16 shadow-lg rounded-full">
-                        <img class="w-full h-full rounded-full" src="../img/mani.jpg" alt="profile">
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <h4 class="text-lg font-semibold text-#D9D9D9">مانی صفرزاده</h4>
-                        <a class="text-2xs text-white">safarzdeh.mani87@gmail.com</a>
-                    </div>
-                </div>
-                <div class="body flex flex-col items-center text-center justify-center p-1 bg-white h-72 w-56 rounded-b-nxl rounded-t-3xl">
-                    <h5 class="tracking-tighter text-#284B63 text-lg mb-2">برنامه نویس بک اند</h5>
-                    <p class="tracking-tighter text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز </p>
-                </div>
-                <div class="social-media relative flex items-center justify-center">
-                    <div class="absolute -top-8 flex items-center justify-center bg-gradient-to-r from-#3C6E71 to-#284B63 text-#D9D9D9 w-36 gap-1 rounded-b-lg p-2">
-                        <i class='bx bxl-telegram text-lg hover:bg-#D9D9D9 rounded-lg hover:text-#3C6E71 hover:transition transition duration-200 px-1'></i>
-                        <i class='bx bxl-linkedin-square text-lg hover:bg-#D9D9D9 rounded-lg hover:text-#3C6E71 hover:transition transition duration-200 px-1'></i>
-                        <i class='bx bxl-github text-lg hover:bg-#D9D9D9 rounded-lg hover:text-#3C6E71 hover:transition transition duration-200 px-1'></i>
-                        <i class='bx bxl-instagram-alt text-lg hover:bg-#D9D9D9 rounded-lg hover:text-#3C6E71 hover:transition transition duration-200 px-1'></i>
-                    </div>
-                </div>
-            </div>
-            <div class="flex flex-col items-center relative">
-                <div class="head flex items-center justify-around bg-gradient-to-r from-#3C6E71 to-#284B63 w-52 h-20 shadow-lg rounded-lg rounded-br-4xl absolute -top-8">
-                    <div class="image flex items-center justify-center w-16 h-16 shadow-lg rounded-full">
-                        <img class="w-full h-full rounded-full" src="../img/radman.jpg" alt="profile">
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <h4 class="text-lg font-semibold text-#D9D9D9">رادمان منتظر</h4>
-                        <a class="text-2xs text-white">radman.cod110@gmail.com</a>
-                    </div>
-                </div>
-                <div class="body flex flex-col items-center text-center justify-center p-1 bg-white h-72 w-56 rounded-b-nxl rounded-t-3xl">
-                    <h5 class="tracking-tighter text-#284B63 text-lg mb-2">برنامه نویس بک اند</h5>
-                    <p class="tracking-tighter text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز </p>
-                </div>
-                <div class="social-media relative flex items-center justify-center">
-                    <div class="absolute -top-8 flex items-center justify-center bg-gradient-to-r from-#3C6E71 to-#284B63 text-#D9D9D9 w-36 gap-1 rounded-b-lg p-2">
-                        <i class='bx bxl-telegram text-lg hover:bg-#D9D9D9 rounded-lg hover:text-#3C6E71 hover:transition transition duration-200 px-1'></i>
-                        <i class='bx bxl-linkedin-square text-lg hover:bg-#D9D9D9 rounded-lg hover:text-#3C6E71 hover:transition transition duration-200 px-1'></i>
-                        <i class='bx bxl-github text-lg hover:bg-#D9D9D9 rounded-lg hover:text-#3C6E71 hover:transition transition duration-200 px-1'></i>
-                        <i class='bx bxl-instagram-alt text-lg hover:bg-#D9D9D9 rounded-lg hover:text-#3C6E71 hover:transition transition duration-200 px-1'></i>
-                    </div>
-                </div>
-            </div>
-            <div class="flex flex-col items-center relative">
-                <div class="head flex items-center justify-around bg-gradient-to-r from-#3C6E71 to-#284B63 w-52 h-20 shadow-lg rounded-lg rounded-br-4xl absolute -top-8">
-                    <div class="image flex items-center justify-center w-16 h-16 shadow-lg rounded-full">
-                        <img class="w-full h-full rounded-full" src="../img/mani.jpg" alt="profile">
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <h4 class="text-lg font-semibold text-#D9D9D9">مانی صفرزاده</h4>
-                        <a class="text-2xs text-white">safarzdeh.mani87@gmail.com</a>
-                    </div>
-                </div>
-                <div class="body flex flex-col items-center text-center justify-center p-1 bg-white h-72 w-56 rounded-b-nxl rounded-t-3xl">
-                    <h5 class="tracking-tighter text-#284B63 text-lg mb-2">برنامه نویس بک اند</h5>
+                    <h5 class="tracking-tighter text-#284B63 text-lg mb-2">برنامه نویس فرانت اند</h5>
                     <p class="tracking-tighter text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز </p>
                 </div>
                 <div class="social-media relative flex items-center justify-center">
@@ -802,7 +678,7 @@
     </section>
 
     <!-- why to trust -->
-    <section style="background: url(../img/StockCake-Formal\ handshake\ agreement_1721073791.jpg) no-repeat center center/cover;" id="section-header" class="relative h-100 md:h-120 lg:h-150 mb-5">
+    <section style="background: url(../img/StockCake-Formal\ handshake\ agreement_1721073791.jpg) no-repeat center center/cover;" id="section-trust" class="relative h-100 md:h-120 lg:h-150 my-5">
         <div class="flex flex-col items-center gap-8 absolute text-white text-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <h5 class="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl">چرا به ما اعتماد کنید؟</h5>
             <p class="sm:text-lg md:text-xl lg:text-2xl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی</p>
