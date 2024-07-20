@@ -40,7 +40,7 @@ modalBoxItems.forEach(function (item) {
 })
 
 // more weblogs button
-let articles = Array.from(document.querySelectorAll('.article'))
+let articles = [...(document.querySelectorAll('.article'))]
 const btnShowMore = document.querySelector('#show-more')
 let counter = 8
 
@@ -69,7 +69,9 @@ window.onload = function () {
             article.classList.add('hidden')
         }
     })
-
+    if (localStorage.getItem('articles') === null) {
+        console.log(JSON.stringify(articles[0]))
+    }
 }
 
 btnShowMore.onclick = function () {

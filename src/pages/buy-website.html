@@ -49,9 +49,9 @@
         </div>
     </section>
     <!-- Input Fields -->
-    <section class="m-6 rounded-lg shadow-lg p-6 md:p-8 md:m-8 bg-white flex flex-col flex-wrap sm:flex-row sm:justify-around">
-        <div class="flex flex-col flex-wrap sm:flex-row sm:items-center w-full justify-around lg:justify-between lg:text-lg xl:text-xl">
-            <div id="personal-info" class="flex flex-col gap-2.5 py-5 border-b-1 border-#353535 sm:w-2/5 sm:border-none lg:w-1/5">
+    <section class="m-6 rounded-lg shadow-lg p-6 md:p-8 md:m-8 bg-white flex flex-col items-center sm:justify-around">
+        <div class="w-full flex flex-col items-center justify-evenly sm:flex-row lg:text-lg xl:text-xl">
+            <div id="personal-info" class="flex flex-col gap-2.5 py-5 border-b-1 border-#353535 sm:w-2/5 sm:border-none">
                 <div id="firstname" class="flex flex-col gap-1">
                     <label class="px-1 font-semibold" for="input-firstname">نام</label>
                     <input class="placeholder:text-sm placeholder:text-#284B63 outline-none px-4 py-1 bg-#D9D9D9 border-#3C6E71 border-2 rounded-lg shadow-lg" type="text" name="input-firstname" id="input-firstname" placeholder="نام" spellcheck="false">
@@ -69,7 +69,7 @@
                     <input class="placeholder:text-sm placeholder:text-#284B63 outline-none px-4 py-1 bg-#D9D9D9 border-#3C6E71 border-2 rounded-lg shadow-lg" type="text" name="input-email" id="input-email" placeholder="ایمیل" spellcheck="false">
                 </div>
             </div>
-            <div id="site-info" class="flex flex-col gap-2.5 py-5 border-b-1 border-#353535 sm:w-2/5 sm:border-none lg:w-1/4">
+            <div id="site-info" class="flex flex-col gap-2.5 py-5 border-b-1 border-#353535 sm:w-2/5 sm:border-none">
                 <div id="site-title" class="flex flex-col gap-1">
                     <label class="px-1 font-semibold" for="input-site-title">عنوان سایت</label>
                     <input class="placeholder:text-sm placeholder:text-#284B63 outline-none px-4 py-1 bg-#D9D9D9 border-#3C6E71 border-2 rounded-lg shadow-lg" type="text" name="input-site-title" id="input-site-title" placeholder="عنوان سایت" spellcheck="false">
@@ -77,7 +77,7 @@
                 <div id="site-description" class="flex flex-col gap-1">
                     <label class="px-1 font-semibold" for="input-description">توضیحات وبسایت</label>
                     <textarea
-                    class="placeholder:text-sm placeholder:text-#284B63 outline-none px-4 py-1 bg-#D9D9D9 border-#3C6E71 border-2 rounded-lg shadow-lg box-border resize-none h-36 text-sm"  
+                    class="placeholder:text-sm placeholder:text-#284B63 outline-none px-4 py-1 bg-#D9D9D9 border-#3C6E71 border-2 rounded-lg shadow-lg box-border resize-none h-36"  
                     name="input-description" 
                     id="input-description" 
                     placeholder="توضیحات وبسایت ..."
@@ -100,32 +100,38 @@
                     </select>
                 </div>
             </div>
-            <div class="hidden w-1/2 lg:block">
-                <img class="w-full h-100 rounded-xl shadow-xl xl:h-120 2xl:h-150" src="../img/StockCake-Glowing Blue Sample_1720877835.jpg" alt="sample">
-            </div>
         </div>
-        <div class="w-full flex flex-col p-2 items-center lg:w-1/2 xl:text-lg 2xl:text-xl">
-            <div id="file-upload" class="py-5 w-full sm:w-2/3">
-                <div class="flex flex-col bg-#284B63 text-white p-5 shadow-lg rounded-lg">
+        <div class="w-full flex flex-col items-center justify-evenly sm:flex-row lg:text-lg xl:text-xl">
+            <div id="file-upload" class="py-5 w-full sm:w-2/5">
+                <div class="flex flex-col bg-#D9D9D9 p-5 shadow-lg rounded-lg">
                     <div class="flex flex-col gap-1.5 mb-3 p-1">
                         <label for="input-uploader">بارگزاری فایل قالب سایت (اختیاری)</label>
                         <p class="text-sm tracking-tighter xl:text-base 2xl:text-lg">فرمت های پشتیبانی شده : JPG, JPEG, PNG</p>
                     </div>
                     <div class="flex items-center justify-center">
                         <input
-                        class="bg-#3C6E71 rounded-lg shadow-lg p-1 md:p-2 lg:p-3 text-sm sm:text-base" 
+                        class="bg-#3C6E71 rounded-lg shadow-lg p-1 md:p-2 lg:p-3 text-sm sm:text-base text-white" 
                         type="file"
                         name="input-uploader"
                         id="input-uploader"
-                        accept="image/*"
+                        accept=".jpg, .png, .jpeg"
                         >
                     </div>
                 </div>
             </div>
-            <form action="#" id="sumbit-data" class="text-center w-full sm:w-2/3">
-                <input class="bg-#3C6E71 rounded-lg shadow-lg w-full text-white hover:bg-white hover:text-#3C6E71 transition hover:transition py-2" type="submit" value="ثبت">
-            </form>
+            <div class="text-sm md:text-base lg:text-lg 2xl:text-xl mb-3 py-5 w-full sm:w-2/5">
+                <ol class="list-decimal text-start flex flex-col gap-3 tracking-tighter">
+                    <li class="sm:mr-8">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</li>
+                    <li class="sm:mr-8">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</li>
+                    <li class="sm:mr-8">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</li>
+                    <li class="sm:mr-8">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</li>
+                    <li class="sm:mr-8">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</li>
+                </ol>
+            </div>
         </div>
+        <form action="#" id="sumbit-data" class="text-center w-full flex items-center justify-center sm:mt-12">
+            <input class="bg-#3C6E71 rounded-lg shadow-lg w-36 text-white hover:bg-white hover:text-#3C6E71 transition hover:transition py-2" type="submit" value="ثبت">
+        </form>
     </section>
 
     <!-- footer -->
