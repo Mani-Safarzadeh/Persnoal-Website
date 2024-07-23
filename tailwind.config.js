@@ -36,7 +36,7 @@ module.exports = {
         '#3C6E71': '#3C6E71', // green
         '#FFFFFF': '#FFFFFF', // white
         '#D9D9D9': '#D9D9D9', // gray
-        '#284B63': '#284B63' //  blue
+        '#284B63': '#284B63'
       },
       borderRadius: {
         '4xl': '2rem',
@@ -71,6 +71,8 @@ module.exports = {
   corePlugins: {
   },
   plugins: [
+    require("@xpd/tailwind-3dtransforms"),
+    require('@tailwindcss/aspect-ratio')
   ],
 }
 

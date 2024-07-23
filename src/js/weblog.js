@@ -69,9 +69,6 @@ window.onload = function () {
             article.classList.add('hidden')
         }
     })
-    if (localStorage.getItem('articles') === null) {
-        console.log(JSON.stringify(articles[0]))
-    }
 }
 
 btnShowMore.onclick = function () {

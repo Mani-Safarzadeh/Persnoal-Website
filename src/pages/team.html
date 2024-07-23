@@ -31,7 +31,7 @@
         </div>
         <!-- Mobile Nav -->
         <div id="nav-menu" class="absolute top-0 w-full transition-all">
-            <ul class="flex items-center gap-6 justify-start px-6 h-12 bg-#3C6E71">
+            <ul class="flex items-center gap-6 justify-start pr-3 sm:px-6 h-12 bg-#3C6E71">
                 <li class="hover:text-#353535 hover:transition rounded-lg hover:bg-#D9D9D9 text-#D9D9D9 transition"><a class="text-sm sm:text-base p-1.5" href="home.html">خانه</a></li>
                 <li class="hover:text-#353535 hover:transition rounded-lg hover:bg-#D9D9D9 text-#D9D9D9 transition"><a class="text-sm sm:text-base p-1.5" href="buy-website.html">خرید وبسایت</a></li>
                 <li class="hover:text-#353535 hover:transition rounded-lg hover:bg-#D9D9D9 text-#D9D9D9 transition"><a class="text-sm sm:text-base p-1.5" href="weblog.html">وبلاگ ما</a></li>
@@ -48,7 +48,7 @@
     <!-- team member cards -->
     <main class="my-12 mx-4">
         <div id="wrapper" class="flex flex-wrap items-center justify-evenly gap-x-4 gap-y-20">
-            <div class="flex flex-col items-center relative">
+            <div class="flex flex-col items-center relative hover:scale-105 transition-transform">
                 <div class="head flex items-center justify-around bg-gradient-to-r from-#3C6E71 to-#284B63 w-52 h-20 shadow-lg rounded-lg rounded-br-4xl absolute -top-8">
                     <div class="image flex items-center justify-center w-16 h-16 shadow-lg rounded-full">
                         <img class="w-full h-full rounded-full" src="../img/radman.jpg" alt="profile">
@@ -71,7 +71,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col items-center relative">
+            <div class="flex flex-col items-center relative hover:scale-105 transition-transform">
                 <div class="head flex items-center justify-around bg-gradient-to-r from-#3C6E71 to-#284B63 w-52 h-20 shadow-lg rounded-lg rounded-br-4xl absolute -top-8">
                     <div class="image flex items-center justify-center w-16 h-16 shadow-lg rounded-full">
                         <img class="w-full h-full rounded-full" src="../img/mani.jpg" alt="profile">
@@ -94,7 +94,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col items-center relative">
+            <div class="flex flex-col items-center relative hover:scale-105 transition-transform">
                 <div class="head flex items-center justify-around bg-gradient-to-r from-#3C6E71 to-#284B63 w-52 h-20 shadow-lg rounded-lg rounded-br-4xl absolute -top-8">
                     <div class="image flex items-center justify-center w-16 h-16 shadow-lg rounded-full">
                         <img class="w-full h-full rounded-full" src="../img/radman.jpg" alt="profile">
@@ -121,50 +121,38 @@
     </main>
     <!-- call us -->
     <section class="my-24 lg:my-36">
-        <div class="w-full flex flex-col items-center gap-y-6 md:hidden whitespace-nowrap border-t-2 border-b-2 border-#3C6E71">
-            <div class="w-2/3 text-center flex flex-col items-center bg-gradient-to-tl from-#3C6E71 to-#284B63 px-10 py-6 rounded-t-3xl text-white mt-10">
-                <h3 class="tracking-tighter sm:text-lg font-bold mb-4">تماس با ما</h3>
-                <p dir="ltr" class="text-sm sm:text-base">+98 000 000 0000</p>
-                <p dir="ltr" class="text-sm sm:text-base">+98 000 000 0000</p>
-            </div>
-            <div class="w-2/3 text-center flex flex-col items-center bg-gradient-to-tl from-#284B63 to-#3C6E71 px-10 py-6 rounded-b-3xl text-white mb-10">
-                <h3 class="tracking-tighter sm:text-lg font-bold mb-4">ساعات کاری ما</h3>
-                <p class="tracking-tighter text-sm sm:text-base">شنبه تا پنجشبه ساعت 9 صبح تا 8 شب</p>
-                <p class="tracking-tighter text-sm sm:text-base">جمعه ها ساعت  9 صبح تا 2 ظهر</p>
-            </div>
-        </div>
-        <div class="hidden md:flex justify-around text-white text-center lg:hidden">
-            <div class="flex flex-col items-center justify-center w-80 h-80 rounded-full rounded-tl shadow-lg bg-gradient-to-tl from-#D9D9D9 to-#3C6E71">
+        <div class="w-full flex flex-col sm:flex-row gap-4 justify-center items-center text-white lg:hidden">
+            <div class="flex flex-col items-center justify-center w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 aspect-1 rounded-full rounded-tl shadow-lg bg-gradient-to-tl from-#D9D9D9 to-#3C6E71">
                 <h3 class="tracking-tighter text-xl font-bold mb-4">تماس با ما</h3>
                 <p dir="ltr">+98 000 000 0000</p>
                 <p dir="ltr">+98 000 000 0000</p>
             </div>
-            <div class="flex flex-col items-center justify-center w-80 h-80 rounded-full rounded-br shadow-lg bg-gradient-to-br from-#D9D9D9 to-#284B63">
+            <div class="flex flex-col items-center justify-center w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 aspect-1 rounded-full rounded-br shadow-lg bg-gradient-to-br from-#D9D9D9 to-#284B63">
                 <h3 class="tracking-tighter text-xl font-bold mb-4">ساعات کاری ما</h3>
                 <p class="tracking-tighter">شنبه تا پنجشبه ساعت 9 صبح تا 8 شب</p>
                 <p class="tracking-tighter">جمعه ها ساعت  9 صبح تا 2 ظهر</p>
             </div>
         </div>
         <div class="hidden w-full lg:flex items-center justify-center gap-20">
-            <div style="background: url(../img/StockCake-Call\ Us\ Now_1721112197.jpg) no-repeat center center/cover;" class="flex flex-col items-center gap-10 w-80 min-h-120 bg-gradient-to-tl from-#FFFFFF to-#D9D9D9 rounded-br-nxl rounded-lg shadow-xl">
+            <div style="background: url(../img/call-us.jpg) no-repeat center center/cover;" class="flex flex-col items-center gap-10 w-80 min-h-120 bg-gradient-to-tl from-#FFFFFF to-#D9D9D9 rounded-br-nxl rounded-lg shadow-xl">
                 <div class="flex items-center justify-center text-center w-3/4 bg-gradient-to-br my-6 from-#3C6E71 to-#284B63 h-24 rounded-t-6xl rounded-b-xl shadow-lg text-white">
-                    <h6 class="tracking-tighter text-2xl font-bold italic">تماس با ما</h6>
+                    <h6 class="tracking-tighter text-2xl font-bold">تماس با ما</h6>
                 </div>
                 <div class="relative w-full">
                     <ul class="absolute -top-10 -right-5 flex flex-col items-center justify-center text-center gap-4 text-#3C6E71 text-2xl">
-                        <li dir="ltr" class="text-lg w-full whitespace-nowrap shadow-lg px-4 py-2 border-1 border-#3C6E71 bg-#D9D9D9 rounded-l-lg rounded-r-nxl">+98 000 000 0000</li>
-                        <li dir="ltr" class="text-lg w-full whitespace-nowrap shadow-lg px-4 py-2 border-1 border-#3C6E71 bg-#D9D9D9 rounded-l-lg rounded-r-nxl">+98 000 000 0000</li>
+                        <li dir="ltr" class="text-lg w-full whitespace-nowrap shadow-lg px-4 py-2 border-1 border-#3C6E71 bg-#D9D9D9 rounded-l-lg rounded-r-nxl hover:translate-x-12 transition-all duration-300">+98 000 000 0000</li>
+                        <li dir="ltr" class="text-lg w-full whitespace-nowrap shadow-lg px-4 py-2 border-1 border-#3C6E71 bg-#D9D9D9 rounded-l-lg rounded-r-nxl hover:translate-x-12 transition-all duration-300">+98 000 000 0000</li>
                     </ul>
                 </div>
             </div>
-            <div style="background: url(../img/StockCake-Architect\'s\ Working\ Desk_1721113101.jpg) no-repeat center center/cover;" class="flex flex-col items-center gap-10 w-80 min-h-120 bg-gradient-to-tl from-#FFFFFF to-#D9D9D9 rounded-br-nxl rounded-lg shadow-xl">
+            <div style="background: url(../img/work-hours.jpg) no-repeat center center/cover;" class="flex flex-col items-center gap-10 w-80 min-h-120 bg-gradient-to-tl from-#FFFFFF to-#D9D9D9 rounded-br-nxl rounded-lg shadow-xl">
                 <div class="flex items-center justify-center text-center w-3/4 bg-gradient-to-br my-6 from-#3C6E71 to-#284B63 h-24 rounded-t-6xl rounded-b-xl shadow-lg text-white">
-                    <h6 class="tracking-tighter text-2xl font-bold italic">ساعات کاری ما</h6>
+                    <h6 class="tracking-tighter text-2xl font-bold">ساعات کاری ما</h6>
                 </div>
                 <div class="relative w-full">
                     <ul class="absolute -top-10 -right-5 flex flex-col items-center justify-center text-center gap-4 text-#3C6E71 text-2xl">
-                        <li class="w-full tracking-tighter text-base whitespace-nowrap shadow-lg px-4 py-2 border-1 border-#3C6E71 bg-#D9D9D9 rounded-l-lg rounded-r-nxl">شنبه تا پنجشبه ساعت 9 صبح تا 8 شب</li>
-                        <li class="w-full tracking-tighter text-base whitespace-nowrap shadow-lg px-4 py-2 border-1 border-#3C6E71 bg-#D9D9D9 rounded-l-lg rounded-r-nxl">جمعه ها ساعت  9 صبح تا 2 ظهر</li>
+                        <li class="w-full tracking-tighter text-base whitespace-nowrap shadow-lg px-4 py-2 border-1 border-#3C6E71 bg-#D9D9D9 rounded-l-lg rounded-r-nxl hover:translate-x-12 transition-all duration-300">شنبه تا پنجشبه ساعت 9 صبح تا 8 شب</li>
+                        <li class="w-full tracking-tighter text-base whitespace-nowrap shadow-lg px-4 py-2 border-1 border-#3C6E71 bg-#D9D9D9 rounded-l-lg rounded-r-nxl hover:translate-x-12 transition-all duration-300">جمعه ها ساعت  9 صبح تا 2 ظهر</li>
                     </ul>
                 </div>
             </div>
